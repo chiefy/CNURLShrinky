@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'CNURLShrinky-iOS' target in the 'CNURLShrinky-iOS' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
