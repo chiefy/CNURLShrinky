@@ -13,8 +13,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "905FB6C314CB213400A3CCBF"
-               BuildableName = "libCNURLShrinky.a"
+               BlueprintIdentifier = "905FB83714CC73CE00A3CCBF"
+               BuildableName = "CNURLShrinky.framework"
                BlueprintName = "CNURLShrinky"
                ReferencedContainer = "container:CNURLShrinky.xcodeproj">
             </BuildableReference>
@@ -31,7 +31,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "905FB6D714CB213500A3CCBF"
+               BlueprintIdentifier = "905FB84814CC73CE00A3CCBF"
                BuildableName = "CNURLShrinkyTests.octest"
                BlueprintName = "CNURLShrinkyTests"
                ReferencedContainer = "container:CNURLShrinky.xcodeproj">
