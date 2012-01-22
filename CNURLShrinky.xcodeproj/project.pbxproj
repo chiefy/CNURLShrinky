@@ -25,7 +25,7 @@
 		905FB85714CC73CE00A3CCBF /* CNURLShrinkyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB85614CC73CE00A3CCBF /* CNURLShrinkyTests.m */; };
 		905FB8D414CC74BB00A3CCBF /* CNURLShrinky.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB84114CC73CE00A3CCBF /* CNURLShrinky.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		905FB8E114CC7B4000A3CCBF /* CNURLShrinkController.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB8DF14CC7B4000A3CCBF /* CNURLShrinkController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		905FB8E214CC7B4000A3CCBF /* CNURLShrinkController.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB8DF14CC7B4000A3CCBF /* CNURLShrinkController.h */; };
+		905FB8E214CC7B4000A3CCBF /* CNURLShrinkController.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB8DF14CC7B4000A3CCBF /* CNURLShrinkController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		905FB8E314CC7B4000A3CCBF /* CNURLShrinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB8E014CC7B4000A3CCBF /* CNURLShrinkController.m */; };
 		905FB8E414CC7B4000A3CCBF /* CNURLShrinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB8E014CC7B4000A3CCBF /* CNURLShrinkController.m */; };
 		905FB8E814CC7C9100A3CCBF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 905FB8E614CC7C9100A3CCBF /* InfoPlist.strings */; };
@@ -33,11 +33,27 @@
 		905FB8EF14CC7D6C00A3CCBF /* CNURLShrinkyGlobal.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB8EE14CC7D6C00A3CCBF /* CNURLShrinkyGlobal.h */; };
 		905FB8F014CC7D6C00A3CCBF /* CNURLShrinkyGlobal.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB8EE14CC7D6C00A3CCBF /* CNURLShrinkyGlobal.h */; };
 		905FB8F314CC7E7300A3CCBF /* CNURLShrinker.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB8F114CC7E7200A3CCBF /* CNURLShrinker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		905FB8F414CC7E7300A3CCBF /* CNURLShrinker.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB8F114CC7E7200A3CCBF /* CNURLShrinker.h */; };
+		905FB8F414CC7E7300A3CCBF /* CNURLShrinker.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB8F114CC7E7200A3CCBF /* CNURLShrinker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		905FB8F514CC7E7300A3CCBF /* CNURLShrinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB8F214CC7E7200A3CCBF /* CNURLShrinker.m */; };
 		905FB8F614CC7E7300A3CCBF /* CNURLShrinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB8F214CC7E7200A3CCBF /* CNURLShrinker.m */; };
 		905FB8F714CC7E7300A3CCBF /* CNURLShrinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB8F214CC7E7200A3CCBF /* CNURLShrinker.m */; };
 		905FB8F814CC7E7300A3CCBF /* CNURLShrinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB8F214CC7E7200A3CCBF /* CNURLShrinker.m */; };
+		905FB8FE14CC825E00A3CCBF /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 905FB8FA14CC825E00A3CCBF /* CHANGELOG.md */; };
+		905FB90014CC825E00A3CCBF /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 905FB8FA14CC825E00A3CCBF /* CHANGELOG.md */; };
+		905FB90114CC825E00A3CCBF /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB8FB14CC825E00A3CCBF /* JSONKit.h */; };
+		905FB90214CC825E00A3CCBF /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB8FB14CC825E00A3CCBF /* JSONKit.h */; };
+		905FB90314CC825E00A3CCBF /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB8FC14CC825E00A3CCBF /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		905FB90414CC825E00A3CCBF /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB8FC14CC825E00A3CCBF /* JSONKit.m */; };
+		905FB90514CC825E00A3CCBF /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB8FC14CC825E00A3CCBF /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		905FB90614CC825E00A3CCBF /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB8FC14CC825E00A3CCBF /* JSONKit.m */; };
+		905FB90714CC825E00A3CCBF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 905FB8FD14CC825E00A3CCBF /* README.md */; };
+		905FB90914CC825E00A3CCBF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 905FB8FD14CC825E00A3CCBF /* README.md */; };
+		905FB90D14CC847A00A3CCBF /* GDataXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB90B14CC847A00A3CCBF /* GDataXMLNode.h */; };
+		905FB90E14CC847A00A3CCBF /* GDataXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB90B14CC847A00A3CCBF /* GDataXMLNode.h */; };
+		905FB90F14CC847A00A3CCBF /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB90C14CC847A00A3CCBF /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		905FB91014CC847A00A3CCBF /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB90C14CC847A00A3CCBF /* GDataXMLNode.m */; };
+		905FB91114CC847A00A3CCBF /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB90C14CC847A00A3CCBF /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		905FB91214CC847A00A3CCBF /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB90C14CC847A00A3CCBF /* GDataXMLNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +207,12 @@
 		905FB8EE14CC7D6C00A3CCBF /* CNURLShrinkyGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNURLShrinkyGlobal.h; path = Classes/CNURLShrinkyGlobal.h; sourceTree = "<group>"; };
 		905FB8F114CC7E7200A3CCBF /* CNURLShrinker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNURLShrinker.h; path = Classes/CNURLShrinker.h; sourceTree = "<group>"; };
 		905FB8F214CC7E7200A3CCBF /* CNURLShrinker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CNURLShrinker.m; path = Classes/CNURLShrinker.m; sourceTree = "<group>"; };
+		905FB8FA14CC825E00A3CCBF /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		905FB8FB14CC825E00A3CCBF /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		905FB8FC14CC825E00A3CCBF /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		905FB8FD14CC825E00A3CCBF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		905FB90B14CC847A00A3CCBF /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		905FB90C14CC847A00A3CCBF /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,11 +259,11 @@
 		905FB6B914CB213400A3CCBF = {
 			isa = PBXGroup;
 			children = (
-				905FB8DE14CC7AFA00A3CCBF /* Core */,
-				905FB71F14CB220500A3CCBF /* Tests */,
 				905FB6F514CB21DC00A3CCBF /* lib */,
+				905FB8DE14CC7AFA00A3CCBF /* Core */,
 				905FB6FD14CB21FA00A3CCBF /* CNURLShrinky-iOS */,
 				905FB83A14CC73CE00A3CCBF /* CNURLShrinky */,
+				905FB71F14CB220500A3CCBF /* Tests */,
 				905FB6C614CB213400A3CCBF /* Frameworks */,
 				905FB6C514CB213400A3CCBF /* Products */,
 			);
@@ -283,6 +305,8 @@
 		905FB6F514CB21DC00A3CCBF /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				905FB90A14CC847A00A3CCBF /* GDataXML */,
+				905FB8F914CC825E00A3CCBF /* JSONKit */,
 				905FB85E14CC749200A3CCBF /* MKNetworkKit */,
 			);
 			path = lib;
@@ -595,6 +619,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		905FB8F914CC825E00A3CCBF /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				905FB8FA14CC825E00A3CCBF /* CHANGELOG.md */,
+				905FB8FB14CC825E00A3CCBF /* JSONKit.h */,
+				905FB8FC14CC825E00A3CCBF /* JSONKit.m */,
+				905FB8FD14CC825E00A3CCBF /* README.md */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		905FB90A14CC847A00A3CCBF /* GDataXML */ = {
+			isa = PBXGroup;
+			children = (
+				905FB90B14CC847A00A3CCBF /* GDataXMLNode.h */,
+				905FB90C14CC847A00A3CCBF /* GDataXMLNode.m */,
+			);
+			path = GDataXML;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -606,6 +650,8 @@
 				905FB8E114CC7B4000A3CCBF /* CNURLShrinkController.h in Headers */,
 				905FB8F314CC7E7300A3CCBF /* CNURLShrinker.h in Headers */,
 				905FB8EF14CC7D6C00A3CCBF /* CNURLShrinkyGlobal.h in Headers */,
+				905FB90114CC825E00A3CCBF /* JSONKit.h in Headers */,
+				905FB90D14CC847A00A3CCBF /* GDataXMLNode.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,9 +661,11 @@
 			files = (
 				905FB8D414CC74BB00A3CCBF /* CNURLShrinky.h in Headers */,
 				905FB8E214CC7B4000A3CCBF /* CNURLShrinkController.h in Headers */,
+				905FB8F414CC7E7300A3CCBF /* CNURLShrinker.h in Headers */,
 				905FB8ED14CC7D1A00A3CCBF /* CNURLShrinky-Prefix.pch in Headers */,
 				905FB8F014CC7D6C00A3CCBF /* CNURLShrinkyGlobal.h in Headers */,
-				905FB8F414CC7E7300A3CCBF /* CNURLShrinker.h in Headers */,
+				905FB90214CC825E00A3CCBF /* JSONKit.h in Headers */,
+				905FB90E14CC847A00A3CCBF /* GDataXMLNode.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -782,6 +830,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				905FB71514CB21FA00A3CCBF /* InfoPlist.strings in Resources */,
+				905FB8FE14CC825E00A3CCBF /* CHANGELOG.md in Resources */,
+				905FB90714CC825E00A3CCBF /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -798,6 +848,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				905FB85414CC73CE00A3CCBF /* InfoPlist.strings in Resources */,
+				905FB90014CC825E00A3CCBF /* CHANGELOG.md in Resources */,
+				905FB90914CC825E00A3CCBF /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,6 +892,8 @@
 				905FB7E814CB284900A3CCBF /* CNURLShrinky_iOS.m in Sources */,
 				905FB8E314CC7B4000A3CCBF /* CNURLShrinkController.m in Sources */,
 				905FB8F514CC7E7300A3CCBF /* CNURLShrinker.m in Sources */,
+				905FB90314CC825E00A3CCBF /* JSONKit.m in Sources */,
+				905FB90F14CC847A00A3CCBF /* GDataXMLNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -849,6 +903,8 @@
 			files = (
 				905FB71814CB21FA00A3CCBF /* CNURLShrinky_iOSTests.m in Sources */,
 				905FB8F614CC7E7300A3CCBF /* CNURLShrinker.m in Sources */,
+				905FB90414CC825E00A3CCBF /* JSONKit.m in Sources */,
+				905FB91014CC847A00A3CCBF /* GDataXMLNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -859,6 +915,8 @@
 				905FB84314CC73CE00A3CCBF /* CNURLShrinky.m in Sources */,
 				905FB8E414CC7B4000A3CCBF /* CNURLShrinkController.m in Sources */,
 				905FB8F714CC7E7300A3CCBF /* CNURLShrinker.m in Sources */,
+				905FB90514CC825E00A3CCBF /* JSONKit.m in Sources */,
+				905FB91114CC847A00A3CCBF /* GDataXMLNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -868,6 +926,8 @@
 			files = (
 				905FB85714CC73CE00A3CCBF /* CNURLShrinkyTests.m in Sources */,
 				905FB8F814CC7E7300A3CCBF /* CNURLShrinker.m in Sources */,
+				905FB90614CC825E00A3CCBF /* JSONKit.m in Sources */,
+				905FB91214CC847A00A3CCBF /* GDataXMLNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -985,8 +1045,11 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				LIBRARY_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lxml2";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -1006,7 +1069,10 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				LIBRARY_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = "-lxml2";
 				SDKROOT = macosx;
 			};
 			name = Release;

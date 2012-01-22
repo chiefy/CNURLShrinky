@@ -1,3 +1,6 @@
 [submodule "lib/MKNetworkKit"]
 	path = lib/MKNetworkKit
 	url = git://github.com/MugunthKumar/MKNetworkKit.git
+[submodule "lib/JSONKit"]
+	path = lib/JSONKit
+	url = git://github.com/johnezang/JSONKit.git
