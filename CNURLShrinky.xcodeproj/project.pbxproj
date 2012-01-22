@@ -17,7 +17,6 @@
 		905FB7E814CB284900A3CCBF /* CNURLShrinky_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB70114CB21FA00A3CCBF /* CNURLShrinky_iOS.m */; };
 		905FB7E914CB284B00A3CCBF /* CNURLShrinky_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB70014CB21FA00A3CCBF /* CNURLShrinky_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		905FB83914CC73CE00A3CCBF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905FB6C714CB213500A3CCBF /* Cocoa.framework */; };
-		905FB83F14CC73CE00A3CCBF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 905FB83D14CC73CE00A3CCBF /* InfoPlist.strings */; };
 		905FB84314CC73CE00A3CCBF /* CNURLShrinky.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB84214CC73CE00A3CCBF /* CNURLShrinky.m */; };
 		905FB84A14CC73CE00A3CCBF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905FB6D914CB213500A3CCBF /* SenTestingKit.framework */; };
 		905FB84B14CC73CE00A3CCBF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905FB6C714CB213500A3CCBF /* Cocoa.framework */; };
@@ -25,6 +24,20 @@
 		905FB85414CC73CE00A3CCBF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 905FB85214CC73CE00A3CCBF /* InfoPlist.strings */; };
 		905FB85714CC73CE00A3CCBF /* CNURLShrinkyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB85614CC73CE00A3CCBF /* CNURLShrinkyTests.m */; };
 		905FB8D414CC74BB00A3CCBF /* CNURLShrinky.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB84114CC73CE00A3CCBF /* CNURLShrinky.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		905FB8E114CC7B4000A3CCBF /* CNURLShrinkController.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB8DF14CC7B4000A3CCBF /* CNURLShrinkController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		905FB8E214CC7B4000A3CCBF /* CNURLShrinkController.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB8DF14CC7B4000A3CCBF /* CNURLShrinkController.h */; };
+		905FB8E314CC7B4000A3CCBF /* CNURLShrinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB8E014CC7B4000A3CCBF /* CNURLShrinkController.m */; };
+		905FB8E414CC7B4000A3CCBF /* CNURLShrinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB8E014CC7B4000A3CCBF /* CNURLShrinkController.m */; };
+		905FB8E814CC7C9100A3CCBF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 905FB8E614CC7C9100A3CCBF /* InfoPlist.strings */; };
+		905FB8ED14CC7D1A00A3CCBF /* CNURLShrinky-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 905FB8EC14CC7D1A00A3CCBF /* CNURLShrinky-Prefix.pch */; };
+		905FB8EF14CC7D6C00A3CCBF /* CNURLShrinkyGlobal.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB8EE14CC7D6C00A3CCBF /* CNURLShrinkyGlobal.h */; };
+		905FB8F014CC7D6C00A3CCBF /* CNURLShrinkyGlobal.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB8EE14CC7D6C00A3CCBF /* CNURLShrinkyGlobal.h */; };
+		905FB8F314CC7E7300A3CCBF /* CNURLShrinker.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB8F114CC7E7200A3CCBF /* CNURLShrinker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		905FB8F414CC7E7300A3CCBF /* CNURLShrinker.h in Headers */ = {isa = PBXBuildFile; fileRef = 905FB8F114CC7E7200A3CCBF /* CNURLShrinker.h */; };
+		905FB8F514CC7E7300A3CCBF /* CNURLShrinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB8F214CC7E7200A3CCBF /* CNURLShrinker.m */; };
+		905FB8F614CC7E7300A3CCBF /* CNURLShrinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB8F214CC7E7200A3CCBF /* CNURLShrinker.m */; };
+		905FB8F714CC7E7300A3CCBF /* CNURLShrinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB8F214CC7E7200A3CCBF /* CNURLShrinker.m */; };
+		905FB8F814CC7E7300A3CCBF /* CNURLShrinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 905FB8F214CC7E7200A3CCBF /* CNURLShrinker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,9 +117,6 @@
 		905FB71614CB21FA00A3CCBF /* CNURLShrinky_iOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNURLShrinky_iOSTests.h; sourceTree = "<group>"; };
 		905FB71714CB21FA00A3CCBF /* CNURLShrinky_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNURLShrinky_iOSTests.m; sourceTree = "<group>"; };
 		905FB83814CC73CE00A3CCBF /* CNURLShrinky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CNURLShrinky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		905FB83C14CC73CE00A3CCBF /* CNURLShrinky-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CNURLShrinky-Info.plist"; sourceTree = "<group>"; };
-		905FB83E14CC73CE00A3CCBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		905FB84014CC73CE00A3CCBF /* CNURLShrinky-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CNURLShrinky-Prefix.pch"; sourceTree = "<group>"; };
 		905FB84114CC73CE00A3CCBF /* CNURLShrinky.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNURLShrinky.h; sourceTree = "<group>"; };
 		905FB84214CC73CE00A3CCBF /* CNURLShrinky.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNURLShrinky.m; sourceTree = "<group>"; };
 		905FB84914CC73CE00A3CCBF /* CNURLShrinkyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CNURLShrinkyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +183,14 @@
 		905FB8B014CC749200A3CCBF /* SampleImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SampleImage.jpg; sourceTree = "<group>"; };
 		905FB8B214CC749200A3CCBF /* basic_auth.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = basic_auth.php; sourceTree = "<group>"; };
 		905FB8B314CC749200A3CCBF /* digest_auth.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = digest_auth.php; sourceTree = "<group>"; };
+		905FB8DF14CC7B4000A3CCBF /* CNURLShrinkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNURLShrinkController.h; path = Classes/CNURLShrinkController.h; sourceTree = "<group>"; };
+		905FB8E014CC7B4000A3CCBF /* CNURLShrinkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CNURLShrinkController.m; path = Classes/CNURLShrinkController.m; sourceTree = "<group>"; };
+		905FB8E714CC7C9100A3CCBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		905FB8E914CC7CE000A3CCBF /* CNURLShrinky-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CNURLShrinky-Info.plist"; sourceTree = "<group>"; };
+		905FB8EC14CC7D1A00A3CCBF /* CNURLShrinky-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CNURLShrinky-Prefix.pch"; sourceTree = "<group>"; };
+		905FB8EE14CC7D6C00A3CCBF /* CNURLShrinkyGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNURLShrinkyGlobal.h; path = Classes/CNURLShrinkyGlobal.h; sourceTree = "<group>"; };
+		905FB8F114CC7E7200A3CCBF /* CNURLShrinker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNURLShrinker.h; path = Classes/CNURLShrinker.h; sourceTree = "<group>"; };
+		905FB8F214CC7E7200A3CCBF /* CNURLShrinker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CNURLShrinker.m; path = Classes/CNURLShrinker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +237,7 @@
 		905FB6B914CB213400A3CCBF = {
 			isa = PBXGroup;
 			children = (
+				905FB8DE14CC7AFA00A3CCBF /* Core */,
 				905FB71F14CB220500A3CCBF /* Tests */,
 				905FB6F514CB21DC00A3CCBF /* lib */,
 				905FB6FD14CB21FA00A3CCBF /* CNURLShrinky-iOS */,
@@ -318,21 +337,11 @@
 		905FB83A14CC73CE00A3CCBF /* CNURLShrinky */ = {
 			isa = PBXGroup;
 			children = (
+				905FB8EB14CC7CE500A3CCBF /* Supporting Files */,
 				905FB84114CC73CE00A3CCBF /* CNURLShrinky.h */,
 				905FB84214CC73CE00A3CCBF /* CNURLShrinky.m */,
-				905FB83B14CC73CE00A3CCBF /* Supporting Files */,
 			);
 			path = CNURLShrinky;
-			sourceTree = "<group>";
-		};
-		905FB83B14CC73CE00A3CCBF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				905FB83C14CC73CE00A3CCBF /* CNURLShrinky-Info.plist */,
-				905FB83D14CC73CE00A3CCBF /* InfoPlist.strings */,
-				905FB84014CC73CE00A3CCBF /* CNURLShrinky-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		905FB84F14CC73CE00A3CCBF /* CNURLShrinkyTests */ = {
@@ -556,6 +565,36 @@
 			path = ServerTests;
 			sourceTree = "<group>";
 		};
+		905FB8DE14CC7AFA00A3CCBF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				905FB8EE14CC7D6C00A3CCBF /* CNURLShrinkyGlobal.h */,
+				905FB8DF14CC7B4000A3CCBF /* CNURLShrinkController.h */,
+				905FB8E014CC7B4000A3CCBF /* CNURLShrinkController.m */,
+				905FB8F114CC7E7200A3CCBF /* CNURLShrinker.h */,
+				905FB8F214CC7E7200A3CCBF /* CNURLShrinker.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		905FB8E514CC7C9100A3CCBF /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				905FB8E614CC7C9100A3CCBF /* InfoPlist.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		905FB8EB14CC7CE500A3CCBF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				905FB8EC14CC7D1A00A3CCBF /* CNURLShrinky-Prefix.pch */,
+				905FB8E514CC7C9100A3CCBF /* en.lproj */,
+				905FB8E914CC7CE000A3CCBF /* CNURLShrinky-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -564,6 +603,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				905FB7E914CB284B00A3CCBF /* CNURLShrinky_iOS.h in Headers */,
+				905FB8E114CC7B4000A3CCBF /* CNURLShrinkController.h in Headers */,
+				905FB8F314CC7E7300A3CCBF /* CNURLShrinker.h in Headers */,
+				905FB8EF14CC7D6C00A3CCBF /* CNURLShrinkyGlobal.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +614,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				905FB8D414CC74BB00A3CCBF /* CNURLShrinky.h in Headers */,
+				905FB8E214CC7B4000A3CCBF /* CNURLShrinkController.h in Headers */,
+				905FB8ED14CC7D1A00A3CCBF /* CNURLShrinky-Prefix.pch in Headers */,
+				905FB8F014CC7D6C00A3CCBF /* CNURLShrinkyGlobal.h in Headers */,
+				905FB8F414CC7E7300A3CCBF /* CNURLShrinker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,7 +789,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				905FB83F14CC73CE00A3CCBF /* InfoPlist.strings in Resources */,
+				905FB8E814CC7C9100A3CCBF /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -792,6 +838,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				905FB7E814CB284900A3CCBF /* CNURLShrinky_iOS.m in Sources */,
+				905FB8E314CC7B4000A3CCBF /* CNURLShrinkController.m in Sources */,
+				905FB8F514CC7E7300A3CCBF /* CNURLShrinker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -800,6 +848,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				905FB71814CB21FA00A3CCBF /* CNURLShrinky_iOSTests.m in Sources */,
+				905FB8F614CC7E7300A3CCBF /* CNURLShrinker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -808,6 +857,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				905FB84314CC73CE00A3CCBF /* CNURLShrinky.m in Sources */,
+				905FB8E414CC7B4000A3CCBF /* CNURLShrinkController.m in Sources */,
+				905FB8F714CC7E7300A3CCBF /* CNURLShrinker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -816,6 +867,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				905FB85714CC73CE00A3CCBF /* CNURLShrinkyTests.m in Sources */,
+				905FB8F814CC7E7300A3CCBF /* CNURLShrinker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -849,14 +901,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				905FB71414CB21FA00A3CCBF /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		905FB83D14CC73CE00A3CCBF /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				905FB83E14CC73CE00A3CCBF /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -909,6 +953,14 @@
 			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
+		905FB8E614CC7C9100A3CCBF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				905FB8E714CC7C9100A3CCBF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -933,7 +985,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -954,7 +1006,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
 			};
 			name = Release;
