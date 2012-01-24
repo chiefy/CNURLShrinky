@@ -60,6 +60,15 @@
 		90A2564D14CF041C00A04E1D /* CNShinkerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A2564914CF041C00A04E1D /* CNShinkerData.m */; };
 		90A2564E14CF041C00A04E1D /* CNShinkerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A2564914CF041C00A04E1D /* CNShinkerData.m */; };
 		90A2564F14CF041C00A04E1D /* CNShinkerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A2564914CF041C00A04E1D /* CNShinkerData.m */; };
+		90A2565214CF062000A04E1D /* _template.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A2565114CF062000A04E1D /* _template.plist */; };
+		90A2565314CF062000A04E1D /* _template.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A2565114CF062000A04E1D /* _template.plist */; };
+		90A2565414CF062000A04E1D /* _template.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A2565114CF062000A04E1D /* _template.plist */; };
+		90A2565714CF08D600A04E1D /* isgd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A2565514CF08D600A04E1D /* isgd.plist */; };
+		90A2565814CF08D600A04E1D /* isgd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A2565514CF08D600A04E1D /* isgd.plist */; };
+		90A2565914CF08D600A04E1D /* isgd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A2565514CF08D600A04E1D /* isgd.plist */; };
+		90A2565A14CF08D600A04E1D /* tinyurl.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A2565614CF08D600A04E1D /* tinyurl.plist */; };
+		90A2565B14CF08D600A04E1D /* tinyurl.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A2565614CF08D600A04E1D /* tinyurl.plist */; };
+		90A2565C14CF08D600A04E1D /* tinyurl.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A2565614CF08D600A04E1D /* tinyurl.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -221,6 +230,9 @@
 		905FB90C14CC847A00A3CCBF /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
 		90A2564814CF041C00A04E1D /* CNShinkerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNShinkerData.h; path = Classes/CNShinkerData.h; sourceTree = "<group>"; };
 		90A2564914CF041C00A04E1D /* CNShinkerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CNShinkerData.m; path = Classes/CNShinkerData.m; sourceTree = "<group>"; };
+		90A2565114CF062000A04E1D /* _template.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = _template.plist; sourceTree = "<group>"; };
+		90A2565514CF08D600A04E1D /* isgd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = isgd.plist; sourceTree = "<group>"; };
+		90A2565614CF08D600A04E1D /* tinyurl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tinyurl.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				905FB6F514CB21DC00A3CCBF /* lib */,
+				90A2565014CF060E00A04E1D /* Services */,
 				905FB8DE14CC7AFA00A3CCBF /* Core */,
 				905FB6FD14CB21FA00A3CCBF /* CNURLShrinky-iOS */,
 				905FB83A14CC73CE00A3CCBF /* CNURLShrinky */,
@@ -649,6 +662,16 @@
 			path = GDataXML;
 			sourceTree = "<group>";
 		};
+		90A2565014CF060E00A04E1D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				90A2565114CF062000A04E1D /* _template.plist */,
+				90A2565514CF08D600A04E1D /* isgd.plist */,
+				90A2565614CF08D600A04E1D /* tinyurl.plist */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -844,6 +867,9 @@
 				905FB71514CB21FA00A3CCBF /* InfoPlist.strings in Resources */,
 				905FB8FE14CC825E00A3CCBF /* CHANGELOG.md in Resources */,
 				905FB90714CC825E00A3CCBF /* README.md in Resources */,
+				90A2565214CF062000A04E1D /* _template.plist in Resources */,
+				90A2565714CF08D600A04E1D /* isgd.plist in Resources */,
+				90A2565A14CF08D600A04E1D /* tinyurl.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -852,6 +878,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				905FB8E814CC7C9100A3CCBF /* InfoPlist.strings in Resources */,
+				90A2565314CF062000A04E1D /* _template.plist in Resources */,
+				90A2565814CF08D600A04E1D /* isgd.plist in Resources */,
+				90A2565B14CF08D600A04E1D /* tinyurl.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -862,6 +891,9 @@
 				905FB85414CC73CE00A3CCBF /* InfoPlist.strings in Resources */,
 				905FB90014CC825E00A3CCBF /* CHANGELOG.md in Resources */,
 				905FB90914CC825E00A3CCBF /* README.md in Resources */,
+				90A2565414CF062000A04E1D /* _template.plist in Resources */,
+				90A2565914CF08D600A04E1D /* isgd.plist in Resources */,
+				90A2565C14CF08D600A04E1D /* tinyurl.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

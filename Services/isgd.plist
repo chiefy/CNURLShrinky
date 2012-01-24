@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Service Name</key>
+	<string>is.gd</string>
+	<key>API URL</key>
+	<dict>
+		<key>shortenParam</key>
+		<string>url</string>
+		<key>base</key>
+		<string>http://is.gd/create.php</string>
+		<key>format</key>
+		<string>format</string>
+	</dict>
+	<key>Data Format</key>
+	<dict>
+		<key>Plain Text</key>
+		<false/>
+		<key>JSON</key>
+		<false/>
+		<key>XML</key>
+		<false/>
+	</dict>
+</dict>
+</plist>
