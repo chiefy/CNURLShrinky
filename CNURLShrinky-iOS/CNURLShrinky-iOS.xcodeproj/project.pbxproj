@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		900E8AD214CF2B3800A08BBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900E8AD114CF2B3800A08BBD /* Foundation.framework */; };
+		900E8AE014CF2B3800A08BBD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900E8ADF14CF2B3800A08BBD /* SenTestingKit.framework */; };
+		900E8AE314CF2B3800A08BBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900E8AD114CF2B3800A08BBD /* Foundation.framework */; };
+		900E8AE614CF2B3800A08BBD /* libCNURLShrinky-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 900E8ACE14CF2B3800A08BBD /* libCNURLShrinky-iOS.a */; };
+		900E8AEC14CF2B3800A08BBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 900E8AEA14CF2B3800A08BBD /* InfoPlist.strings */; };
+		900E8AEF14CF2B3800A08BBD /* CNURLShrinky_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8AEE14CF2B3800A08BBD /* CNURLShrinky_iOSTests.m */; };
+		900E8B4E14CF2C0600A08BBD /* CNShinkerData.h in Headers */ = {isa = PBXBuildFile; fileRef = 900E8B4714CF2C0600A08BBD /* CNShinkerData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		900E8B4F14CF2C0600A08BBD /* CNShinkerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B4814CF2C0600A08BBD /* CNShinkerData.m */; };
+		900E8B5014CF2C0600A08BBD /* CNShinkerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B4814CF2C0600A08BBD /* CNShinkerData.m */; };
+		900E8B5114CF2C0600A08BBD /* CNURLShrinkController.h in Headers */ = {isa = PBXBuildFile; fileRef = 900E8B4914CF2C0600A08BBD /* CNURLShrinkController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		900E8B5214CF2C0600A08BBD /* CNURLShrinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B4A14CF2C0600A08BBD /* CNURLShrinkController.m */; };
+		900E8B5314CF2C0600A08BBD /* CNURLShrinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B4A14CF2C0600A08BBD /* CNURLShrinkController.m */; };
+		900E8B5414CF2C0600A08BBD /* CNURLShrinker.h in Headers */ = {isa = PBXBuildFile; fileRef = 900E8B4B14CF2C0600A08BBD /* CNURLShrinker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		900E8B5514CF2C0600A08BBD /* CNURLShrinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B4C14CF2C0600A08BBD /* CNURLShrinker.m */; };
+		900E8B5614CF2C0600A08BBD /* CNURLShrinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B4C14CF2C0600A08BBD /* CNURLShrinker.m */; };
+		900E8B5714CF2C0600A08BBD /* CNURLShrinkyGlobal.h in Headers */ = {isa = PBXBuildFile; fileRef = 900E8B4D14CF2C0600A08BBD /* CNURLShrinkyGlobal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		900E8BC514CF2C1A00A08BBD /* GDataXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 900E8B5A14CF2C1900A08BBD /* GDataXMLNode.h */; };
+		900E8BC614CF2C1A00A08BBD /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B5B14CF2C1900A08BBD /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = " -fno-objc-arc"; }; };
+		900E8BC714CF2C1A00A08BBD /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 900E8B5E14CF2C1900A08BBD /* JSONKit.h */; };
+		900E8BC814CF2C1A00A08BBD /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B5F14CF2C1900A08BBD /* JSONKit.m */; settings = {COMPILER_FLAGS = " -fno-objc-arc"; }; };
+		900E8CD214CF2E3300A08BBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900E8CD114CF2E3300A08BBD /* UIKit.framework */; };
+		900E8CEB14CF30B000A08BBD /* libMKNetworkKit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 900E8CEA14CF30B000A08BBD /* libMKNetworkKit-iOS.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		900E8AE414CF2B3800A08BBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 900E8AC514CF2B3800A08BBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 900E8ACD14CF2B3800A08BBD;
+			remoteInfo = "CNURLShrinky-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		900E8ACE14CF2B3800A08BBD /* libCNURLShrinky-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCNURLShrinky-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		900E8AD114CF2B3800A08BBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		900E8AD514CF2B3800A08BBD /* CNURLShrinky-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CNURLShrinky-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		900E8ADE14CF2B3800A08BBD /* CNURLShrinky-iOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CNURLShrinky-iOSTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		900E8ADF14CF2B3800A08BBD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		900E8AE914CF2B3800A08BBD /* CNURLShrinky-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CNURLShrinky-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		900E8AEB14CF2B3800A08BBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		900E8AED14CF2B3800A08BBD /* CNURLShrinky_iOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNURLShrinky_iOSTests.h; sourceTree = "<group>"; };
+		900E8AEE14CF2B3800A08BBD /* CNURLShrinky_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNURLShrinky_iOSTests.m; sourceTree = "<group>"; };
+		900E8B4714CF2C0600A08BBD /* CNShinkerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNShinkerData.h; sourceTree = "<group>"; };
+		900E8B4814CF2C0600A08BBD /* CNShinkerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNShinkerData.m; sourceTree = "<group>"; };
+		900E8B4914CF2C0600A08BBD /* CNURLShrinkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNURLShrinkController.h; sourceTree = "<group>"; };
+		900E8B4A14CF2C0600A08BBD /* CNURLShrinkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNURLShrinkController.m; sourceTree = "<group>"; };
+		900E8B4B14CF2C0600A08BBD /* CNURLShrinker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNURLShrinker.h; sourceTree = "<group>"; };
+		900E8B4C14CF2C0600A08BBD /* CNURLShrinker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNURLShrinker.m; sourceTree = "<group>"; };
+		900E8B4D14CF2C0600A08BBD /* CNURLShrinkyGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNURLShrinkyGlobal.h; sourceTree = "<group>"; };
+		900E8B5A14CF2C1900A08BBD /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		900E8B5B14CF2C1900A08BBD /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		900E8B5D14CF2C1900A08BBD /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		900E8B5E14CF2C1900A08BBD /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		900E8B5F14CF2C1900A08BBD /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		900E8B6014CF2C1900A08BBD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		900E8CD114CF2E3300A08BBD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		900E8CEA14CF30B000A08BBD /* libMKNetworkKit-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libMKNetworkKit-iOS.a"; path = "MKNetworkKit/MKNetworkKit-iOS/build/Release-iphoneos/libMKNetworkKit-iOS.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		900E8ACB14CF2B3800A08BBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900E8CEB14CF30B000A08BBD /* libMKNetworkKit-iOS.a in Frameworks */,
+				900E8CD214CF2E3300A08BBD /* UIKit.framework in Frameworks */,
+				900E8AD214CF2B3800A08BBD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900E8ADA14CF2B3800A08BBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900E8AE014CF2B3800A08BBD /* SenTestingKit.framework in Frameworks */,
+				900E8AE314CF2B3800A08BBD /* Foundation.framework in Frameworks */,
+				900E8AE614CF2B3800A08BBD /* libCNURLShrinky-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		900E8AC314CF2B3800A08BBD = {
+			isa = PBXGroup;
+			children = (
+				900E8B5814CF2C1900A08BBD /* lib */,
+				900E8B4614CF2C0600A08BBD /* Classes */,
+				900E8AD314CF2B3800A08BBD /* CNURLShrinky-iOS */,
+				900E8AE714CF2B3800A08BBD /* CNURLShrinky-iOSTests */,
+				900E8AD014CF2B3800A08BBD /* Frameworks */,
+				900E8ACF14CF2B3800A08BBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		900E8ACF14CF2B3800A08BBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				900E8ACE14CF2B3800A08BBD /* libCNURLShrinky-iOS.a */,
+				900E8ADE14CF2B3800A08BBD /* CNURLShrinky-iOSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		900E8AD014CF2B3800A08BBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				900E8CD114CF2E3300A08BBD /* UIKit.framework */,
+				900E8AD114CF2B3800A08BBD /* Foundation.framework */,
+				900E8ADF14CF2B3800A08BBD /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		900E8AD314CF2B3800A08BBD /* CNURLShrinky-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				900E8AD414CF2B3800A08BBD /* Supporting Files */,
+			);
+			path = "CNURLShrinky-iOS";
+			sourceTree = "<group>";
+		};
+		900E8AD414CF2B3800A08BBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				900E8AD514CF2B3800A08BBD /* CNURLShrinky-iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		900E8AE714CF2B3800A08BBD /* CNURLShrinky-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				900E8AED14CF2B3800A08BBD /* CNURLShrinky_iOSTests.h */,
+				900E8AEE14CF2B3800A08BBD /* CNURLShrinky_iOSTests.m */,
+				900E8AE814CF2B3800A08BBD /* Supporting Files */,
+			);
+			path = "CNURLShrinky-iOSTests";
+			sourceTree = "<group>";
+		};
+		900E8AE814CF2B3800A08BBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				900E8AE914CF2B3800A08BBD /* CNURLShrinky-iOSTests-Info.plist */,
+				900E8AEA14CF2B3800A08BBD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		900E8B4614CF2C0600A08BBD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				900E8B4714CF2C0600A08BBD /* CNShinkerData.h */,
+				900E8B4814CF2C0600A08BBD /* CNShinkerData.m */,
+				900E8B4914CF2C0600A08BBD /* CNURLShrinkController.h */,
+				900E8B4A14CF2C0600A08BBD /* CNURLShrinkController.m */,
+				900E8B4B14CF2C0600A08BBD /* CNURLShrinker.h */,
+				900E8B4C14CF2C0600A08BBD /* CNURLShrinker.m */,
+				900E8B4D14CF2C0600A08BBD /* CNURLShrinkyGlobal.h */,
+			);
+			name = Classes;
+			path = ../Classes;
+			sourceTree = "<group>";
+		};
+		900E8B5814CF2C1900A08BBD /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				900E8CEA14CF30B000A08BBD /* libMKNetworkKit-iOS.a */,
+				900E8B5914CF2C1900A08BBD /* GDataXML */,
+				900E8B5C14CF2C1900A08BBD /* JSONKit */,
+			);
+			name = lib;
+			path = ../lib;
+			sourceTree = "<group>";
+		};
+		900E8B5914CF2C1900A08BBD /* GDataXML */ = {
+			isa = PBXGroup;
+			children = (
+				900E8B5A14CF2C1900A08BBD /* GDataXMLNode.h */,
+				900E8B5B14CF2C1900A08BBD /* GDataXMLNode.m */,
+			);
+			path = GDataXML;
+			sourceTree = "<group>";
+		};
+		900E8B5C14CF2C1900A08BBD /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				900E8B5D14CF2C1900A08BBD /* CHANGELOG.md */,
+				900E8B5E14CF2C1900A08BBD /* JSONKit.h */,
+				900E8B5F14CF2C1900A08BBD /* JSONKit.m */,
+				900E8B6014CF2C1900A08BBD /* README.md */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		900E8ACC14CF2B3800A08BBD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900E8B4E14CF2C0600A08BBD /* CNShinkerData.h in Headers */,
+				900E8B5114CF2C0600A08BBD /* CNURLShrinkController.h in Headers */,
+				900E8B5414CF2C0600A08BBD /* CNURLShrinker.h in Headers */,
+				900E8B5714CF2C0600A08BBD /* CNURLShrinkyGlobal.h in Headers */,
+				900E8BC514CF2C1A00A08BBD /* GDataXMLNode.h in Headers */,
+				900E8BC714CF2C1A00A08BBD /* JSONKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		900E8ACD14CF2B3800A08BBD /* CNURLShrinky-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 900E8AF214CF2B3800A08BBD /* Build configuration list for PBXNativeTarget "CNURLShrinky-iOS" */;
+			buildPhases = (
+				900E8ACA14CF2B3800A08BBD /* Sources */,
+				900E8ACB14CF2B3800A08BBD /* Frameworks */,
+				900E8ACC14CF2B3800A08BBD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CNURLShrinky-iOS";
+			productName = "CNURLShrinky-iOS";
+			productReference = 900E8ACE14CF2B3800A08BBD /* libCNURLShrinky-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		900E8ADD14CF2B3800A08BBD /* CNURLShrinky-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 900E8AF514CF2B3800A08BBD /* Build configuration list for PBXNativeTarget "CNURLShrinky-iOSTests" */;
+			buildPhases = (
+				900E8AD914CF2B3800A08BBD /* Sources */,
+				900E8ADA14CF2B3800A08BBD /* Frameworks */,
+				900E8ADB14CF2B3800A08BBD /* Resources */,
+				900E8ADC14CF2B3800A08BBD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				900E8AE514CF2B3800A08BBD /* PBXTargetDependency */,
+			);
+			name = "CNURLShrinky-iOSTests";
+			productName = "CNURLShrinky-iOSTests";
+			productReference = 900E8ADE14CF2B3800A08BBD /* CNURLShrinky-iOSTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		900E8AC514CF2B3800A08BBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 900E8AC814CF2B3800A08BBD /* Build configuration list for PBXProject "CNURLShrinky-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 900E8AC314CF2B3800A08BBD;
+			productRefGroup = 900E8ACF14CF2B3800A08BBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				900E8ACD14CF2B3800A08BBD /* CNURLShrinky-iOS */,
+				900E8ADD14CF2B3800A08BBD /* CNURLShrinky-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		900E8ADB14CF2B3800A08BBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900E8AEC14CF2B3800A08BBD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		900E8ADC14CF2B3800A08BBD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		900E8ACA14CF2B3800A08BBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900E8B4F14CF2C0600A08BBD /* CNShinkerData.m in Sources */,
+				900E8B5214CF2C0600A08BBD /* CNURLShrinkController.m in Sources */,
+				900E8B5514CF2C0600A08BBD /* CNURLShrinker.m in Sources */,
+				900E8BC614CF2C1A00A08BBD /* GDataXMLNode.m in Sources */,
+				900E8BC814CF2C1A00A08BBD /* JSONKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900E8AD914CF2B3800A08BBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900E8AEF14CF2B3800A08BBD /* CNURLShrinky_iOSTests.m in Sources */,
+				900E8B5014CF2C0600A08BBD /* CNShinkerData.m in Sources */,
+				900E8B5314CF2C0600A08BBD /* CNURLShrinkController.m in Sources */,
+				900E8B5614CF2C0600A08BBD /* CNURLShrinker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		900E8AE514CF2B3800A08BBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 900E8ACD14CF2B3800A08BBD /* CNURLShrinky-iOS */;
+			targetProxy = 900E8AE414CF2B3800A08BBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		900E8AEA14CF2B3800A08BBD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				900E8AEB14CF2B3800A08BBD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		900E8AF014CF2B3800A08BBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-lxml2";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		900E8AF114CF2B3800A08BBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-lxml2";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		900E8AF314CF2B3800A08BBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CNURLShrinky_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CNURLShrinky-iOS/CNURLShrinky-iOS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		900E8AF414CF2B3800A08BBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CNURLShrinky_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CNURLShrinky-iOS/CNURLShrinky-iOS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		900E8AF614CF2B3800A08BBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CNURLShrinky-iOS/CNURLShrinky-iOS-Prefix.pch";
+				INFOPLIST_FILE = "CNURLShrinky-iOSTests/CNURLShrinky-iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		900E8AF714CF2B3800A08BBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CNURLShrinky-iOS/CNURLShrinky-iOS-Prefix.pch";
+				INFOPLIST_FILE = "CNURLShrinky-iOSTests/CNURLShrinky-iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		900E8AC814CF2B3800A08BBD /* Build configuration list for PBXProject "CNURLShrinky-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				900E8AF014CF2B3800A08BBD /* Debug */,
+				900E8AF114CF2B3800A08BBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		900E8AF214CF2B3800A08BBD /* Build configuration list for PBXNativeTarget "CNURLShrinky-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				900E8AF314CF2B3800A08BBD /* Debug */,
+				900E8AF414CF2B3800A08BBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		900E8AF514CF2B3800A08BBD /* Build configuration list for PBXNativeTarget "CNURLShrinky-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				900E8AF614CF2B3800A08BBD /* Debug */,
+				900E8AF714CF2B3800A08BBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 900E8AC514CF2B3800A08BBD /* Project object */;
+}

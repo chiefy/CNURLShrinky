@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CNURLShrinky-OSX/CNURLShrinky-OSX.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CNURLShrinky-iOS/CNURLShrinky-iOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:lib/MKNetworkKit/MKNetworkKit-iOS/MKNetworkKit-iOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:lib/MKNetworkKit/MKNetworkKit-OSX/MKNetworkKit-OSX.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Examples/iOS-Demo/iOS-Demo.xcodeproj">
+   </FileRef>
+</Workspace>

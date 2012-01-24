@@ -34,6 +34,11 @@ SINGLETON_GCD(CNURLShrinkController)
 - (id) init {
     if ( (self = [super init]) ) {
         // Initialization code here.
+    
+        NSFileManager *manager = [NSFileManager defaultManager];
+        NSString *templatePath = [[NSBundle mainBundle] bundlePath];
+        
+        NSArray *templates = [manager contentsOfDirectoryAtPath:[NSString stringWithFormat:@"%@/Services",templatePath] error:nil];
     }   
     return self;
 }
