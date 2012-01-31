@@ -1,6 +1,3 @@
-//
-//  CNShinkerData.h
-//  CNURLShrinky
 
 // Copyright (c) 2012 Christopher Najewicz
 
@@ -21,6 +18,22 @@
 // IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-@interface CNShinkerData : NSObject
+#import "CNURLShrinkyGlobal.h"
 
-@end
+CNDataFormat CNDataFormatFromString(NSString* str) {
+    if([str isEqualToString:@"JSON"]) {
+        return CNDataFormatJSON;
+    } else if([str isEqualToString:@"XML"]) {
+        return CNDataFormatXML;
+    } else
+        return CNDataFormatPlainText;
+}
+
+NSString * const CNServiceDataFormatKey = @"Data Format";
+NSString * const CNServiceNameKey = @"Service Name";
+NSString * const CNAPIUrlsKey = @"API URL";
+
+NSString * const CNShortenKey = @"shorten";
+NSString * const CNExpandKey = @"expand";
+NSString * const CNFormatKey = @"format";
+NSString * const CNAPIBaseUrlKey = @"base";

@@ -24,5 +24,15 @@
 #import "CNURLShrinker.h"
 
 @implementation CNURLShrinker
+@synthesize shrinkerData = _shrinkerData;
+
+- (id)initWithData:(CNShrinkerData*)data {
+    NSAssert(data, @"You must instantiate a CNURLShrinker with an instance of CNShrinkerData");
+    
+    if( (self = [super init]) ) {
+        
+        return self;
+    } else return nil;
+}
 
 @end

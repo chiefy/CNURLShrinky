@@ -22,10 +22,14 @@
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #import "CNURLShrinkController.h"
+#import "CNShrinkerData.h"
+#import "CNURLShrinker.h"
 
 @implementation CNURLShrinkController
 
 SINGLETON_GCD(CNURLShrinkController)
+
+@synthesize serviceDefs = _serviceDefs;
 
 + (CNURLShrinkController*)sharedController {
     return [CNURLShrinkController sharedCNURLShrinkController];
@@ -34,11 +38,27 @@ SINGLETON_GCD(CNURLShrinkController)
 - (id) init {
     if ( (self = [super init]) ) {
         // Initialization code here.
-    
-        NSFileManager *manager = [NSFileManager defaultManager];
-        NSString *templatePath = [[NSBundle mainBundle] bundlePath];
+        NSBundle *services = [NSBundle bundleWithPath:
+                              [NSString stringWithFormat:@"%@/%@",
+                               [[NSBundle mainBundle] bundlePath],SERVICE_BUNDLE]];
+        NSAssert(services,@"You must include a services bundle to use CNURLShinky with your iOS or Cocoa app");
         
-        NSArray *templates = [manager contentsOfDirectoryAtPath:[NSString stringWithFormat:@"%@/Services",templatePath] error:nil];
+        NSArray *servicePlists = [services pathsForResourcesOfType:@"plist" inDirectory:nil];
+        
+        NSAssert([servicePlists count] > 0,@"You must include at least one shortening service in your services bundle file");
+        
+        NSMutableDictionary *newServices = [[NSMutableDictionary alloc] initWithCapacity:servicePlists.count];
+        
+        for (NSString *plistPath in servicePlists) {
+            NSDictionary *servicePlist = [NSDictionary dictionaryWithContentsOfFile:plistPath];
+            if (![servicePlist objectForKey:CNServiceNameKey] || 
+                [[servicePlist objectForKey:CNServiceNameKey] isEqualToString:@""]) {
+                continue;
+            }
+            CNShrinkerData *data = [[CNShrinkerData alloc] initWithService:servicePlist];
+            [newServices setObject:data forKey:data.name];
+        }
+        self.serviceDefs = [[NSDictionary alloc] initWithDictionary:newServices copyItems:YES];
     }   
     return self;
 }

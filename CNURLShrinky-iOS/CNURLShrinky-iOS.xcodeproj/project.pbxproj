@@ -13,9 +13,9 @@
 		900E8AE614CF2B3800A08BBD /* libCNURLShrinky-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 900E8ACE14CF2B3800A08BBD /* libCNURLShrinky-iOS.a */; };
 		900E8AEC14CF2B3800A08BBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 900E8AEA14CF2B3800A08BBD /* InfoPlist.strings */; };
 		900E8AEF14CF2B3800A08BBD /* CNURLShrinky_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8AEE14CF2B3800A08BBD /* CNURLShrinky_iOSTests.m */; };
-		900E8B4E14CF2C0600A08BBD /* CNShinkerData.h in Headers */ = {isa = PBXBuildFile; fileRef = 900E8B4714CF2C0600A08BBD /* CNShinkerData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		900E8B4F14CF2C0600A08BBD /* CNShinkerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B4814CF2C0600A08BBD /* CNShinkerData.m */; };
-		900E8B5014CF2C0600A08BBD /* CNShinkerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B4814CF2C0600A08BBD /* CNShinkerData.m */; };
+		900E8B4E14CF2C0600A08BBD /* CNShrinkerData.h in Headers */ = {isa = PBXBuildFile; fileRef = 900E8B4714CF2C0600A08BBD /* CNShrinkerData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		900E8B4F14CF2C0600A08BBD /* CNShrinkerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B4814CF2C0600A08BBD /* CNShrinkerData.m */; };
+		900E8B5014CF2C0600A08BBD /* CNShrinkerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B4814CF2C0600A08BBD /* CNShrinkerData.m */; };
 		900E8B5114CF2C0600A08BBD /* CNURLShrinkController.h in Headers */ = {isa = PBXBuildFile; fileRef = 900E8B4914CF2C0600A08BBD /* CNURLShrinkController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		900E8B5214CF2C0600A08BBD /* CNURLShrinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B4A14CF2C0600A08BBD /* CNURLShrinkController.m */; };
 		900E8B5314CF2C0600A08BBD /* CNURLShrinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B4A14CF2C0600A08BBD /* CNURLShrinkController.m */; };
@@ -29,6 +29,8 @@
 		900E8BC814CF2C1A00A08BBD /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B5F14CF2C1900A08BBD /* JSONKit.m */; settings = {COMPILER_FLAGS = " -fno-objc-arc"; }; };
 		900E8CD214CF2E3300A08BBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900E8CD114CF2E3300A08BBD /* UIKit.framework */; };
 		900E8CEB14CF30B000A08BBD /* libMKNetworkKit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 900E8CEA14CF30B000A08BBD /* libMKNetworkKit-iOS.a */; };
+		9077F05714D5A7210087DD57 /* CNURLShrinkyGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077F05614D5A7210087DD57 /* CNURLShrinkyGlobal.m */; };
+		9077F05814D5A7210087DD57 /* CNURLShrinkyGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077F05614D5A7210087DD57 /* CNURLShrinkyGlobal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +53,8 @@
 		900E8AEB14CF2B3800A08BBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		900E8AED14CF2B3800A08BBD /* CNURLShrinky_iOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNURLShrinky_iOSTests.h; sourceTree = "<group>"; };
 		900E8AEE14CF2B3800A08BBD /* CNURLShrinky_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNURLShrinky_iOSTests.m; sourceTree = "<group>"; };
-		900E8B4714CF2C0600A08BBD /* CNShinkerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNShinkerData.h; sourceTree = "<group>"; };
-		900E8B4814CF2C0600A08BBD /* CNShinkerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNShinkerData.m; sourceTree = "<group>"; };
+		900E8B4714CF2C0600A08BBD /* CNShrinkerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNShrinkerData.h; sourceTree = "<group>"; };
+		900E8B4814CF2C0600A08BBD /* CNShrinkerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNShrinkerData.m; sourceTree = "<group>"; };
 		900E8B4914CF2C0600A08BBD /* CNURLShrinkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNURLShrinkController.h; sourceTree = "<group>"; };
 		900E8B4A14CF2C0600A08BBD /* CNURLShrinkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNURLShrinkController.m; sourceTree = "<group>"; };
 		900E8B4B14CF2C0600A08BBD /* CNURLShrinker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNURLShrinker.h; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		900E8B6014CF2C1900A08BBD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		900E8CD114CF2E3300A08BBD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		900E8CEA14CF30B000A08BBD /* libMKNetworkKit-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libMKNetworkKit-iOS.a"; path = "MKNetworkKit/MKNetworkKit-iOS/build/Release-iphoneos/libMKNetworkKit-iOS.a"; sourceTree = "<group>"; };
+		9077F05614D5A7210087DD57 /* CNURLShrinkyGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNURLShrinkyGlobal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,13 +164,14 @@
 		900E8B4614CF2C0600A08BBD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				900E8B4714CF2C0600A08BBD /* CNShinkerData.h */,
-				900E8B4814CF2C0600A08BBD /* CNShinkerData.m */,
+				900E8B4714CF2C0600A08BBD /* CNShrinkerData.h */,
+				900E8B4814CF2C0600A08BBD /* CNShrinkerData.m */,
 				900E8B4914CF2C0600A08BBD /* CNURLShrinkController.h */,
 				900E8B4A14CF2C0600A08BBD /* CNURLShrinkController.m */,
 				900E8B4B14CF2C0600A08BBD /* CNURLShrinker.h */,
 				900E8B4C14CF2C0600A08BBD /* CNURLShrinker.m */,
 				900E8B4D14CF2C0600A08BBD /* CNURLShrinkyGlobal.h */,
+				9077F05614D5A7210087DD57 /* CNURLShrinkyGlobal.m */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -211,8 +215,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				900E8B4E14CF2C0600A08BBD /* CNShinkerData.h in Headers */,
 				900E8B5114CF2C0600A08BBD /* CNURLShrinkController.h in Headers */,
+				900E8B4E14CF2C0600A08BBD /* CNShrinkerData.h in Headers */,
 				900E8B5414CF2C0600A08BBD /* CNURLShrinker.h in Headers */,
 				900E8B5714CF2C0600A08BBD /* CNURLShrinkyGlobal.h in Headers */,
 				900E8BC514CF2C1A00A08BBD /* GDataXMLNode.h in Headers */,
@@ -317,11 +321,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				900E8B4F14CF2C0600A08BBD /* CNShinkerData.m in Sources */,
+				900E8B4F14CF2C0600A08BBD /* CNShrinkerData.m in Sources */,
 				900E8B5214CF2C0600A08BBD /* CNURLShrinkController.m in Sources */,
 				900E8B5514CF2C0600A08BBD /* CNURLShrinker.m in Sources */,
 				900E8BC614CF2C1A00A08BBD /* GDataXMLNode.m in Sources */,
 				900E8BC814CF2C1A00A08BBD /* JSONKit.m in Sources */,
+				9077F05714D5A7210087DD57 /* CNURLShrinkyGlobal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,9 +335,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				900E8AEF14CF2B3800A08BBD /* CNURLShrinky_iOSTests.m in Sources */,
-				900E8B5014CF2C0600A08BBD /* CNShinkerData.m in Sources */,
+				900E8B5014CF2C0600A08BBD /* CNShrinkerData.m in Sources */,
 				900E8B5314CF2C0600A08BBD /* CNURLShrinkController.m in Sources */,
 				900E8B5614CF2C0600A08BBD /* CNURLShrinker.m in Sources */,
+				9077F05814D5A7210087DD57 /* CNURLShrinkyGlobal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +483,7 @@
 				900E8AF414CF2B3800A08BBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		900E8AF514CF2B3800A08BBD /* Build configuration list for PBXNativeTarget "CNURLShrinky-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +492,7 @@
 				900E8AF714CF2B3800A08BBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -27,6 +27,8 @@ typedef void (^CNURLShrinkerCompletionBlock)(NSURL *shortUrl);
 
 @interface CNURLShrinkController : NSObject
 
+@property(nonatomic,strong) NSDictionary *serviceDefs;
+
 + (CNURLShrinkController*)sharedCNURLShrinkController;
 
 // Alias of above as by default macro makes long name of singleton

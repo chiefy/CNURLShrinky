@@ -34,3 +34,27 @@ shared##classname = [[self alloc] init]; });    \
 return shared##classname;                           \
 }                                                           
 #endif
+
+
+// This is the name of the bundle file with definitions
+// for any shortening services you setup.
+//
+// See the _template.plist inside the bundle for example
+#define SERVICE_BUNDLE @"Services.bundle"
+
+
+typedef enum CNDataFormat {
+    CNDataFormatPlainText,
+    CNDataFormatJSON,
+    CNDataFormatXML
+} CNDataFormat;
+
+extern CNDataFormat CNDataFormatFromString(NSString* str);
+
+extern NSString* const CNServiceDataFormatKey;
+extern NSString* const CNServiceNameKey;
+extern NSString* const CNAPIUrlsKey;
+extern NSString* const CNShortenKey;
+extern NSString* const CNExpandKey;
+extern NSString* const CNAPIBaseUrlKey;
+extern NSString* const CNFormatKey;

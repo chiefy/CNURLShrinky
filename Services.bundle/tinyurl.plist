@@ -6,7 +6,7 @@
 	<string>tinyurl.com</string>
 	<key>API URL</key>
 	<dict>
-		<key>shortenParam</key>
+		<key>shorten</key>
 		<string>url</string>
 		<key>base</key>
 		<string>http://tinyurl.com/api-create.php</string>

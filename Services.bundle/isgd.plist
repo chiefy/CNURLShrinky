@@ -6,7 +6,7 @@
 	<string>is.gd</string>
 	<key>API URL</key>
 	<dict>
-		<key>shortenParam</key>
+		<key>shorten</key>
 		<string>url</string>
 		<key>base</key>
 		<string>http://is.gd/create.php</string>
@@ -18,7 +18,7 @@
 		<key>Plain Text</key>
 		<false/>
 		<key>JSON</key>
-		<false/>
+		<true/>
 		<key>XML</key>
 		<false/>
 	</dict>

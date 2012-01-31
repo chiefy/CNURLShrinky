@@ -1,5 +1,5 @@
 //
-//  CNShinkerData.m
+//  CNShrinkerData.h
 //  CNURLShrinky
 
 // Copyright (c) 2012 Christopher Najewicz
@@ -21,9 +21,18 @@
 // IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+@interface CNShrinkerData : NSObject <NSCopying> {
+    BOOL _canExpand, _canShorten;
+    NSString *_apiKey;
+}
 
-#import "CNShinkerData.h"
+@property(nonatomic, strong) NSURL *APIBaseUrl;
+@property(nonatomic, strong) NSString *name;
+@property(nonatomic, strong) NSMutableDictionary *params;
+@property(nonatomic) CNDataFormat dataFormat;
 
-@implementation CNShinkerData
+@property(nonatomic, readonly) BOOL canExpand, canShorten;
+
+- (id)initWithService:(NSDictionary*)service;
 
 @end

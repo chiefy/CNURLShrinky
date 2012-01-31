@@ -8,6 +8,7 @@
 
 #import "CNAppDelegate.h"
 #import "CNViewController.h"
+#import "CNURLShrinkController.h"
 
 @implementation CNAppDelegate
 
@@ -25,6 +26,7 @@
     }
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    [CNURLShrinkController sharedController];
     return YES;
 }
 
