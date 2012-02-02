@@ -26,7 +26,11 @@
     }
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
-    [CNURLShrinkController sharedController];
+
+    [CNURLShrinkController shortenURL:[NSURL URLWithString:@"http://www.beefdisciple.com"]
+                                           withServiceName:@"is.gd"];
+    
+    
     return YES;
 }
 

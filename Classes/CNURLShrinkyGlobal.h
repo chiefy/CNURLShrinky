@@ -50,6 +50,7 @@ typedef enum CNDataFormat {
 } CNDataFormat;
 
 extern CNDataFormat CNDataFormatFromString(NSString* str);
+extern NSString* CNStringFromDataFormat(CNDataFormat df);
 
 extern NSString* const CNServiceDataFormatKey;
 extern NSString* const CNServiceNameKey;

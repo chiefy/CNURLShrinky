@@ -20,13 +20,34 @@
 
 #import "CNURLShrinkyGlobal.h"
 
+#define JSON_TXT @"json"
+#define XML_TXT @"xml"
+#define TEXT_TXT @""
+
 CNDataFormat CNDataFormatFromString(NSString* str) {
-    if([str isEqualToString:@"JSON"]) {
+    if([str isEqualToString:JSON_TXT] || [str isEqualToString:[JSON_TXT uppercaseString]]) {
         return CNDataFormatJSON;
-    } else if([str isEqualToString:@"XML"]) {
+    } else if([str isEqualToString:XML_TXT] || [str isEqualToString:[XML_TXT uppercaseString]]) {
         return CNDataFormatXML;
     } else
         return CNDataFormatPlainText;
+}
+
+NSString* CNStringFromDataFormat(CNDataFormat df) {
+    switch (df) {
+        case CNDataFormatJSON:
+            return JSON_TXT;
+            break;
+        case CNDataFormatXML:
+            return XML_TXT;
+            break;
+        case CNDataFormatPlainText:
+            return TEXT_TXT;
+            break;
+        default:
+            return nil;
+            break;
+    }
 }
 
 NSString * const CNServiceDataFormatKey = @"Data Format";

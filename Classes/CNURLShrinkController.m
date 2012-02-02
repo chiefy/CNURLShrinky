@@ -58,9 +58,40 @@ SINGLETON_GCD(CNURLShrinkController)
             CNShrinkerData *data = [[CNShrinkerData alloc] initWithService:servicePlist];
             [newServices setObject:data forKey:data.name];
         }
-        self.serviceDefs = [[NSDictionary alloc] initWithDictionary:newServices copyItems:YES];
+        _serviceDefs = [[NSDictionary alloc] initWithDictionary:newServices];
     }   
     return self;
 }
+
++ (CNShrinkerData*)serviceDefinitionFor:(NSString*)shrinkerName {
+    return [[[CNURLShrinkController sharedController] serviceDefs] objectForKey:shrinkerName];
+}
+
+
++ (CNURLShrinker*)shortenURL:(NSURL*)longUrl 
+                 withServiceName:(NSString*)shrinkerName
+                  onComplete:(CNURLShrinkerCompletionBlock)completionBlock
+                     onError:(CNURLShrinkerErrorBlock)errorBlock 
+{
+    CNShrinkerData *serviceDef = [CNURLShrinkController serviceDefinitionFor:shrinkerName];
+    NSAssert(serviceDef,@"Could not load service definition");
+    
+    CNURLShrinker *newShrinker = [[CNURLShrinker alloc] initWithData:serviceDef];
+    newShrinker.longUrl = longUrl;
+    newShrinker.doneShortening = completionBlock;
+    return newShrinker;
+}
+
++ (CNURLShrinker*)shortenURL:(NSURL *)longUrl 
+             withServiceName:(NSString *)shrinkerName {
+    CNShrinkerData *serviceDef = [CNURLShrinkController serviceDefinitionFor:shrinkerName];
+    NSAssert(serviceDef,@"Could not load service definition");
+    
+    CNURLShrinker *newShrinker = [[CNURLShrinker alloc] initWithData:serviceDef];
+    newShrinker.longUrl = longUrl;
+    [newShrinker shorten];
+    return newShrinker;
+}
+
 
 @end

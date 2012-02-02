@@ -21,12 +21,29 @@
 // IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+#import "CNURLShrinkController.h"
+#import "MKNetworkKit.h"
+
 @class CNShrinkerData;
 
-@interface CNURLShrinker : NSObject
+@interface CNURLShrinker : MKNetworkEngine {
+    __strong MKNetworkOperation *_currentOperation;
+}
 
-@property(nonatomic, strong) CNShrinkerData *shrinkerData;
+@property(nonatomic, assign) CNShrinkerData *shrinkerData;
+@property(nonatomic, strong) NSURL *longUrl, *shortUrl;
+@property(nonatomic, copy) CNURLShrinkerCompletionBlock doneShortening, doneExpanding;
+@property(nonatomic, copy) CNURLShrinkerErrorBlock onError;
+@property(nonatomic, readonly) BOOL canShorten, canExpand;
 
 - (id)initWithData:(CNShrinkerData*)data;
+
+- (void)shorten;
+- (void)shortenWithCompletionBlock:(CNURLShrinkerCompletionBlock)block
+                           orError:(CNURLShrinkerErrorBlock)errorBlock;
+
+- (void)expand;
+- (void)expandWithCompletionBlock:(CNURLShrinkerCompletionBlock)block
+                          orError:(CNURLShrinkerErrorBlock)errorBlock;
 
 @end

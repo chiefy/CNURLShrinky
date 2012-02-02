@@ -40,10 +40,9 @@
         
         self.name = [service objectForKey:CNServiceNameKey];
         
-        NSDictionary *apiUrls = [service objectForKey:CNAPIUrlsKey];
+        NSMutableDictionary *apiUrls = [[NSMutableDictionary alloc] initWithDictionary:[service objectForKey:CNAPIUrlsKey]];
         
         NSAssert(apiUrls,@"Services require an API URL section");
-        self.params = [[NSMutableDictionary alloc] initWithCapacity:3];
         
         NSString 
             *shortenKey,
@@ -52,21 +51,17 @@
 
         NSAssert([apiUrls objectForKey:CNAPIBaseUrlKey], @"Services require a base URL definition for building API calls");
         self.APIBaseUrl = [NSURL URLWithString:[apiUrls objectForKey:CNAPIBaseUrlKey]];
-        
+        [apiUrls removeObjectForKey:CNAPIBaseUrlKey];
         
         if( (shortenKey = [apiUrls objectForKey:CNShortenKey]) ) {
-            [self.params setValue:@"" forKey:shortenKey];
             _canShorten = YES;
         }
         
         if( (expandKey = [apiUrls objectForKey:CNExpandKey]) ) {
-            [self.params setValue:@"" forKey:expandKey];
             _canExpand = YES;
         }
         
         if( (formatKey = [apiUrls objectForKey:CNFormatKey]) ){
-            [self.params setValue:@"" forKey:formatKey];
-
             NSDictionary *formats = [service objectForKey:CNServiceDataFormatKey];
             [formats enumerateKeysAndObjectsUsingBlock:
              ^(id key, NSNumber* obj, BOOL *stop){
@@ -78,6 +73,8 @@
         } else {
             self.dataFormat = CNDataFormatPlainText;
         }
+        
+        self.params = [[NSDictionary alloc] initWithDictionary:apiUrls];
         
         return self;
     
@@ -93,23 +90,4 @@
     return _canShorten;
 }
 
-#pragma mark -
-#pragma mark NSCopying
-- (id)copyWithZone:(NSZone *)zone {
-    CNShrinkerData *newData = [[CNShrinkerData allocWithZone:zone] init];
-
-    newData.shortUrl = nil;
-    newData.longUrl = nil;
-    newData.name = [self.name copy];
-    newData.APIBaseUrl = [self.APIBaseUrl copy];
-    newData->_canExpand = self.canExpand;
-    newData->_canShorten = self.canShorten;
-    newData.params = [[NSMutableDictionary alloc] initWithDictionary:self.params copyItems:YES];
-    [newData.params enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-        obj = @"";
-    }];
-    newData.dataFormat = self.dataFormat;
-    
-    return newData;
-}
 @end

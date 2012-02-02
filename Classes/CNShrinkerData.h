@@ -21,14 +21,14 @@
 // IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-@interface CNShrinkerData : NSObject <NSCopying> {
+@interface CNShrinkerData : NSObject {
     BOOL _canExpand, _canShorten;
     NSString *_apiKey;
 }
 
 @property(nonatomic, strong) NSURL *APIBaseUrl;
 @property(nonatomic, strong) NSString *name;
-@property(nonatomic, strong) NSMutableDictionary *params;
+@property(nonatomic, strong) NSDictionary *params;
 @property(nonatomic) CNDataFormat dataFormat;
 
 @property(nonatomic, readonly) BOOL canExpand, canShorten;

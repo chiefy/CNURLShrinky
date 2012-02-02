@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9071E46714D9E73F0048297E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9071E46614D9E73F0048297E /* Security.framework */; };
+		9071E46914D9E76E0048297E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9071E46814D9E76E0048297E /* SystemConfiguration.framework */; };
 		9077F05B14D5CB800087DD57 /* libCNURLShrinky-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9077F05A14D5CB800087DD57 /* libCNURLShrinky-iOS.a */; };
 		9077F05F14D6DDE00087DD57 /* Services.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9077F05E14D6DDE00087DD57 /* Services.bundle */; };
 		90A2573D14CF13CD00A04E1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A2573C14CF13CD00A04E1D /* UIKit.framework */; };
@@ -21,7 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9077F05A14D5CB800087DD57 /* libCNURLShrinky-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libCNURLShrinky-iOS.a"; path = "../../CNURLShrinky-iOS/build/Release-iphoneos/libCNURLShrinky-iOS.a"; sourceTree = "<group>"; };
+		9071E46014D9E34C0048297E /* CNShrinkerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNShrinkerData.h; path = ../../Classes/CNShrinkerData.h; sourceTree = "<group>"; };
+		9071E46114D9E34C0048297E /* CNURLShrinkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNURLShrinkController.h; path = ../../Classes/CNURLShrinkController.h; sourceTree = "<group>"; };
+		9071E46214D9E34C0048297E /* CNURLShrinker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNURLShrinker.h; path = ../../Classes/CNURLShrinker.h; sourceTree = "<group>"; };
+		9071E46314D9E34C0048297E /* CNURLShrinkyGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNURLShrinkyGlobal.h; path = ../../Classes/CNURLShrinkyGlobal.h; sourceTree = "<group>"; };
+		9071E46614D9E73F0048297E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9071E46814D9E76E0048297E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9077F05A14D5CB800087DD57 /* libCNURLShrinky-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libCNURLShrinky-iOS.a"; path = "../../CNURLShrinky-iOS/build/Release-iphoneos/libCNURLShrinky-iOS.a"; sourceTree = "<group>"; };
 		9077F05E14D6DDE00087DD57 /* Services.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Services.bundle; path = ../../../Services.bundle; sourceTree = "<group>"; };
 		90A2573814CF13CD00A04E1D /* iOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A2573C14CF13CD00A04E1D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -45,6 +53,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9077F05B14D5CB800087DD57 /* libCNURLShrinky-iOS.a in Frameworks */,
+				9071E46914D9E76E0048297E /* SystemConfiguration.framework in Frameworks */,
+				9071E46714D9E73F0048297E /* Security.framework in Frameworks */,
 				90A2573D14CF13CD00A04E1D /* UIKit.framework in Frameworks */,
 				90A2573F14CF13CD00A04E1D /* Foundation.framework in Frameworks */,
 				90A2574114CF13CD00A04E1D /* CoreGraphics.framework in Frameworks */,
@@ -54,10 +64,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9071E45D14D9E32C0048297E /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				9071E45F14D9E3350048297E /* CNURLShrinky */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		9071E45F14D9E3350048297E /* CNURLShrinky */ = {
+			isa = PBXGroup;
+			children = (
+				9071E46014D9E34C0048297E /* CNShrinkerData.h */,
+				9071E46114D9E34C0048297E /* CNURLShrinkController.h */,
+				9071E46214D9E34C0048297E /* CNURLShrinker.h */,
+				9071E46314D9E34C0048297E /* CNURLShrinkyGlobal.h */,
+				9077F05A14D5CB800087DD57 /* libCNURLShrinky-iOS.a */,
+			);
+			name = CNURLShrinky;
+			sourceTree = "<group>";
+		};
 		90A2572D14CF13CD00A04E1D = {
 			isa = PBXGroup;
 			children = (
-				9077F05A14D5CB800087DD57 /* libCNURLShrinky-iOS.a */,
+				9071E45D14D9E32C0048297E /* lib */,
 				90A2574214CF13CD00A04E1D /* iOS-Demo */,
 				90A2573B14CF13CD00A04E1D /* Frameworks */,
 				90A2573914CF13CD00A04E1D /* Products */,
@@ -75,6 +105,8 @@
 		90A2573B14CF13CD00A04E1D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9071E46814D9E76E0048297E /* SystemConfiguration.framework */,
+				9071E46614D9E73F0048297E /* Security.framework */,
 				90A2573C14CF13CD00A04E1D /* UIKit.framework */,
 				90A2573E14CF13CD00A04E1D /* Foundation.framework */,
 				90A2574014CF13CD00A04E1D /* CoreGraphics.framework */,
@@ -260,17 +292,21 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Demo/iOS-Demo-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "iOS-Demo/iOS-Demo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "";
-				WARNING_LDFLAGS = (
+				INFOPLIST_PREPROCESSOR_DEFINITIONS = (
 					"-ObjC",
 					"-all_load",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WARNING_LDFLAGS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -280,17 +316,21 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Demo/iOS-Demo-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "iOS-Demo/iOS-Demo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "";
-				WARNING_LDFLAGS = (
+				INFOPLIST_PREPROCESSOR_DEFINITIONS = (
 					"-ObjC",
 					"-all_load",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WARNING_LDFLAGS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

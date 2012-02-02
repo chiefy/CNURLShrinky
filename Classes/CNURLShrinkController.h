@@ -23,19 +23,33 @@
 
 @class CNURLShrinker, CNShrinkerData;
 
-typedef void (^CNURLShrinkerCompletionBlock)(NSURL *shortUrl);
+typedef void (^CNURLShrinkerCompletionBlock)(CNURLShrinker* shrinker);
+typedef void (^CNURLShrinkerErrorBlock)(NSError *error);
 
-@interface CNURLShrinkController : NSObject
+@interface CNURLShrinkController : NSObject {
+    
+    @private
+    NSDictionary *_serviceDefs;
 
-@property(nonatomic,strong) NSDictionary *serviceDefs;
+}
+
+@property(nonatomic,strong,readonly) NSDictionary *serviceDefs;
 
 + (CNURLShrinkController*)sharedCNURLShrinkController;
 
 // Alias of above as by default macro makes long name of singleton
 + (CNURLShrinkController*)sharedController;
 
++ (CNShrinkerData*)serviceDefinitionFor:(NSString*)shrinkerName;
+
 + (CNURLShrinker*)shortenURL:(NSURL*)longUrl 
-                withShinkAPI:(CNShrinkerData*)api
-                  onComplete:CNURLShrinkerCompletionBlock;
+             withServiceName:(NSString*)shrinkerName
+                  onComplete:(CNURLShrinkerCompletionBlock)completionBlock
+                     onError:(CNURLShrinkerErrorBlock)errorBlock;
+
++ (CNURLShrinker*)shortenURL:(NSURL*)longUrl 
+             withServiceName:(NSString*)shrinkerName;
+
+
 
 @end

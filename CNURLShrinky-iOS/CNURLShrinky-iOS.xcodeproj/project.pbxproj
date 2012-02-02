@@ -23,12 +23,19 @@
 		900E8B5514CF2C0600A08BBD /* CNURLShrinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B4C14CF2C0600A08BBD /* CNURLShrinker.m */; };
 		900E8B5614CF2C0600A08BBD /* CNURLShrinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B4C14CF2C0600A08BBD /* CNURLShrinker.m */; };
 		900E8B5714CF2C0600A08BBD /* CNURLShrinkyGlobal.h in Headers */ = {isa = PBXBuildFile; fileRef = 900E8B4D14CF2C0600A08BBD /* CNURLShrinkyGlobal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		900E8BC514CF2C1A00A08BBD /* GDataXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 900E8B5A14CF2C1900A08BBD /* GDataXMLNode.h */; };
+		900E8BC514CF2C1A00A08BBD /* GDataXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 900E8B5A14CF2C1900A08BBD /* GDataXMLNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		900E8BC614CF2C1A00A08BBD /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B5B14CF2C1900A08BBD /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = " -fno-objc-arc"; }; };
-		900E8BC714CF2C1A00A08BBD /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 900E8B5E14CF2C1900A08BBD /* JSONKit.h */; };
+		900E8BC714CF2C1A00A08BBD /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 900E8B5E14CF2C1900A08BBD /* JSONKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		900E8BC814CF2C1A00A08BBD /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B5F14CF2C1900A08BBD /* JSONKit.m */; settings = {COMPILER_FLAGS = " -fno-objc-arc"; }; };
-		900E8CD214CF2E3300A08BBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900E8CD114CF2E3300A08BBD /* UIKit.framework */; };
 		900E8CEB14CF30B000A08BBD /* libMKNetworkKit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 900E8CEA14CF30B000A08BBD /* libMKNetworkKit-iOS.a */; };
+		9071E47514D9EC4D0048297E /* NSDate+RFC1123.h in Headers */ = {isa = PBXBuildFile; fileRef = 9071E46B14D9EC4D0048297E /* NSDate+RFC1123.h */; };
+		9071E47714D9EC4D0048297E /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 9071E46D14D9EC4D0048297E /* NSData+Base64.h */; };
+		9071E47914D9EC4D0048297E /* NSDictionary+RequestEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 9071E46F14D9EC4D0048297E /* NSDictionary+RequestEncoding.h */; };
+		9071E47B14D9EC4D0048297E /* NSString+MKNetworkKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9071E47114D9EC4D0048297E /* NSString+MKNetworkKitAdditions.h */; };
+		9071E47D14D9EC4D0048297E /* UIAlertView+MKNetworkKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9071E47314D9EC4D0048297E /* UIAlertView+MKNetworkKitAdditions.h */; };
+		9071E48214D9EC610048297E /* MKNetworkEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 9071E47F14D9EC610048297E /* MKNetworkEngine.h */; };
+		9071E48314D9EC610048297E /* MKNetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9071E48014D9EC610048297E /* MKNetworkKit.h */; };
+		9071E48414D9EC610048297E /* MKNetworkOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9071E48114D9EC610048297E /* MKNetworkOperation.h */; };
 		9077F05714D5A7210087DD57 /* CNURLShrinkyGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077F05614D5A7210087DD57 /* CNURLShrinkyGlobal.m */; };
 		9077F05814D5A7210087DD57 /* CNURLShrinkyGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077F05614D5A7210087DD57 /* CNURLShrinkyGlobal.m */; };
 /* End PBXBuildFile section */
@@ -68,6 +75,15 @@
 		900E8B6014CF2C1900A08BBD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		900E8CD114CF2E3300A08BBD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		900E8CEA14CF30B000A08BBD /* libMKNetworkKit-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libMKNetworkKit-iOS.a"; path = "MKNetworkKit/MKNetworkKit-iOS/build/Release-iphoneos/libMKNetworkKit-iOS.a"; sourceTree = "<group>"; };
+		9071E46414D9E6BA0048297E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9071E46B14D9EC4D0048297E /* NSDate+RFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC1123.h"; sourceTree = "<group>"; };
+		9071E46D14D9EC4D0048297E /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		9071E46F14D9EC4D0048297E /* NSDictionary+RequestEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RequestEncoding.h"; sourceTree = "<group>"; };
+		9071E47114D9EC4D0048297E /* NSString+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		9071E47314D9EC4D0048297E /* UIAlertView+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		9071E47F14D9EC610048297E /* MKNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKNetworkEngine.h; path = "MKNetworkKit/MKNetworkKit-iOS/MKNetworkKit-iOS/../../MKNetworkKit/MKNetworkEngine.h"; sourceTree = "<group>"; };
+		9071E48014D9EC610048297E /* MKNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKNetworkKit.h; path = "MKNetworkKit/MKNetworkKit-iOS/MKNetworkKit-iOS/../../MKNetworkKit/MKNetworkKit.h"; sourceTree = "<group>"; };
+		9071E48114D9EC610048297E /* MKNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKNetworkOperation.h; path = "MKNetworkKit/MKNetworkKit-iOS/MKNetworkKit-iOS/../../MKNetworkKit/MKNetworkOperation.h"; sourceTree = "<group>"; };
 		9077F05614D5A7210087DD57 /* CNURLShrinkyGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNURLShrinkyGlobal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +93,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				900E8CEB14CF30B000A08BBD /* libMKNetworkKit-iOS.a in Frameworks */,
-				900E8CD214CF2E3300A08BBD /* UIKit.framework in Frameworks */,
 				900E8AD214CF2B3800A08BBD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +134,7 @@
 		900E8AD014CF2B3800A08BBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9071E46414D9E6BA0048297E /* Security.framework */,
 				900E8CD114CF2E3300A08BBD /* UIKit.framework */,
 				900E8AD114CF2B3800A08BBD /* Foundation.framework */,
 				900E8ADF14CF2B3800A08BBD /* SenTestingKit.framework */,
@@ -180,7 +196,7 @@
 		900E8B5814CF2C1900A08BBD /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				900E8CEA14CF30B000A08BBD /* libMKNetworkKit-iOS.a */,
+				9071E45014D9DB390048297E /* MKNetworkKit */,
 				900E8B5914CF2C1900A08BBD /* GDataXML */,
 				900E8B5C14CF2C1900A08BBD /* JSONKit */,
 			);
@@ -208,6 +224,31 @@
 			path = JSONKit;
 			sourceTree = "<group>";
 		};
+		9071E45014D9DB390048297E /* MKNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				9071E47F14D9EC610048297E /* MKNetworkEngine.h */,
+				9071E48014D9EC610048297E /* MKNetworkKit.h */,
+				9071E48114D9EC610048297E /* MKNetworkOperation.h */,
+				9071E46A14D9EC4D0048297E /* Categories */,
+				900E8CEA14CF30B000A08BBD /* libMKNetworkKit-iOS.a */,
+			);
+			name = MKNetworkKit;
+			sourceTree = "<group>";
+		};
+		9071E46A14D9EC4D0048297E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9071E46B14D9EC4D0048297E /* NSDate+RFC1123.h */,
+				9071E46D14D9EC4D0048297E /* NSData+Base64.h */,
+				9071E46F14D9EC4D0048297E /* NSDictionary+RequestEncoding.h */,
+				9071E47114D9EC4D0048297E /* NSString+MKNetworkKitAdditions.h */,
+				9071E47314D9EC4D0048297E /* UIAlertView+MKNetworkKitAdditions.h */,
+			);
+			name = Categories;
+			path = "MKNetworkKit/MKNetworkKit-iOS/MKNetworkKit-iOS/../../MKNetworkKit/Categories";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -221,6 +262,14 @@
 				900E8B5714CF2C0600A08BBD /* CNURLShrinkyGlobal.h in Headers */,
 				900E8BC514CF2C1A00A08BBD /* GDataXMLNode.h in Headers */,
 				900E8BC714CF2C1A00A08BBD /* JSONKit.h in Headers */,
+				9071E47514D9EC4D0048297E /* NSDate+RFC1123.h in Headers */,
+				9071E47714D9EC4D0048297E /* NSData+Base64.h in Headers */,
+				9071E47914D9EC4D0048297E /* NSDictionary+RequestEncoding.h in Headers */,
+				9071E47B14D9EC4D0048297E /* NSString+MKNetworkKitAdditions.h in Headers */,
+				9071E47D14D9EC4D0048297E /* UIAlertView+MKNetworkKitAdditions.h in Headers */,
+				9071E48214D9EC610048297E /* MKNetworkEngine.h in Headers */,
+				9071E48314D9EC610048297E /* MKNetworkKit.h in Headers */,
+				9071E48414D9EC610048297E /* MKNetworkOperation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,24 +462,28 @@
 		900E8AF314CF2B3800A08BBD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				DSTROOT = /tmp/CNURLShrinky_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CNURLShrinky-iOS/CNURLShrinky-iOS-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/**";
 			};
 			name = Debug;
 		};
 		900E8AF414CF2B3800A08BBD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				DSTROOT = /tmp/CNURLShrinky_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CNURLShrinky-iOS/CNURLShrinky-iOS-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/**";
 			};
 			name = Release;
 		};
