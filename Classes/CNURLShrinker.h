@@ -24,15 +24,23 @@
 #import "CNURLShrinkController.h"
 #import "MKNetworkKit.h"
 
+typedef enum {
+    CNActionIdle,
+    CNActionShortening,
+    CNActionExpanding,
+    CNActionQuerying
+} CNURLShrinkyAction;
+
+
 @class CNShrinkerData;
 
 @interface CNURLShrinker : MKNetworkEngine {
-    __strong MKNetworkOperation *_currentOperation;
+    CNURLShrinkyAction _currentAction;
 }
 
-@property(nonatomic, assign) CNShrinkerData *shrinkerData;
+@property(nonatomic, unsafe_unretained) CNShrinkerData *shrinkerData;
 @property(nonatomic, strong) NSURL *longUrl, *shortUrl;
-@property(nonatomic, copy) CNURLShrinkerCompletionBlock doneShortening, doneExpanding;
+@property(nonatomic, copy) CNURLShrinkerCompletionBlock onComplete;
 @property(nonatomic, copy) CNURLShrinkerErrorBlock onError;
 @property(nonatomic, readonly) BOOL canShorten, canExpand;
 

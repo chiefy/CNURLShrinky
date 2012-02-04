@@ -78,7 +78,7 @@ SINGLETON_GCD(CNURLShrinkController)
     
     CNURLShrinker *newShrinker = [[CNURLShrinker alloc] initWithData:serviceDef];
     newShrinker.longUrl = longUrl;
-    newShrinker.doneShortening = completionBlock;
+    [newShrinker shortenWithCompletionBlock:completionBlock orError:errorBlock];
     return newShrinker;
 }
 

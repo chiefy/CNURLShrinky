@@ -29,6 +29,8 @@
 
     [CNURLShrinkController shortenURL:[NSURL URLWithString:@"http://www.beefdisciple.com"]
                                            withServiceName:@"is.gd"];
+    [CNURLShrinkController shortenURL:[NSURL URLWithString:@"http://www.beefdisciple.com"]
+                      withServiceName:@"tinyurl.com"];
     
     
     return YES;

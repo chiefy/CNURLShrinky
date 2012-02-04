@@ -36,8 +36,7 @@
     longUrl = _longUrl,
     shortUrl = _shortUrl,
     onError = _onError,
-    doneShortening = _doneShortening,
-    doneExpanding = _doneExpanding;
+    onComplete = _onComplete;
 
 - (id)initWithData:(CNShrinkerData*)data {
     NSAssert(data, @"You must instantiate a CNURLShrinker with an instance of CNShrinkerData");
@@ -66,22 +65,44 @@
 
 - (MKNKResponseBlock)responseBlock {
     return ^(MKNetworkOperation *completedOp) {
-        NSLog(@"Completed: %@",[[completedOp.responseData objectFromJSONData] objectForKey:@"shorturl"]);
-        if(self.doneShortening)
-            self.doneShortening(self);
+       // NSLog(@"Completed: %@",[[completedOp.responseData objectFromJSONData] objectForKey:@"shorturl"]);
+        
+        switch (self.shrinkerData.dataFormat) {
+            case CNDataFormatJSON:
+                if(_currentAction == CNActionShortening) {
+                        self.shortUrl = [[NSURL alloc] initWithString:[[completedOp.responseData objectFromJSONData] objectForKey:@"shorturl"]];
+                } else if(_currentAction == CNActionExpanding) {
+                        self.longUrl = [[NSURL alloc] initWithString:[[completedOp.responseData objectFromJSONData] objectForKey:@"longurl"]];
+                }
+                break;
+            case CNDataFormatPlainText:
+                if(_currentAction == CNActionShortening)
+                    self.shortUrl = [[NSURL alloc] initWithString:completedOp.responseString];
+                else if(_currentAction == CNActionExpanding)
+                    self.longUrl = [[NSURL alloc] initWithString:completedOp.responseString];
+                break;
+
+            default:
+                break;
+        }
+        NSLog(@"Completed - \n\tshortUrl = %@\n\t longUrl = %@",self.shortUrl,self.longUrl);
+        if(self.onComplete)
+            self.onComplete(self);
     };
 }
 
 - (MKNKErrorBlock)errorBlock {
     return ^(NSError *error) {
         NSLog(@"Error: %@",error);  
+        if(self.onError)
+            self.onError(error);
     };
 }
 
 - (MKNetworkOperation*)operationWithPath:(NSString *)path 
                                   params:(NSMutableDictionary *)body 
                               httpMethod:(NSString *)method {
-    __strong MKNetworkOperation *newOp = [super operationWithPath:path params:body httpMethod:method];
+    MKNetworkOperation *newOp = [super operationWithPath:path params:body httpMethod:method];
     [newOp onCompletion:[self responseBlock] onError:[self errorBlock]];
     return newOp;
 }
@@ -104,19 +125,16 @@
 
 - (void)shorten {
     if(![self canShorten]) return;
+    _currentAction = CNActionShortening;
     [self enqueueOperation:[self prepShortenOperation]];
 }
 
 - (void)shortenWithCompletionBlock:(CNURLShrinkerCompletionBlock)block 
                            orError:(CNURLShrinkerErrorBlock)errorBlock
 {
-    if(![self canShorten]) return;
-    
-    self.doneShortening = nil;
-    self.doneShortening = block;
-    self.onError = nil;
+    self.onComplete = block;
     self.onError = errorBlock;
-    [self enqueueOperation:[self prepShortenOperation]];
+    [self shorten];
 }
 
 @end
