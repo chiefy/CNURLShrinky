@@ -3,20 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>Service Name</key>
-	<string>is.gd</string>
+	<string>Bit.ly</string>
 	<key>API URL</key>
 	<dict>
 		<key>shorten</key>
 		<dict>
 			<key>urlParam</key>
-			<string>url</string>
+			<string>longUrl</string>
 			<key>endpoint</key>
-			<string>/create.php</string>
+			<string>/v3/shorten</string>
 		</dict>
 		<key>base</key>
-		<string>http://is.gd</string>
+		<string>https://api-ssl.bitly.com</string>
 		<key>format</key>
 		<string>format</string>
+		<key>login</key>
+		<string>login</string>
+		<key>apiKey</key>
+		<string>apiKey</string>
 	</dict>
 	<key>Data Format</key>
 	<dict>

@@ -24,12 +24,14 @@
 @interface CNShrinkerData : NSObject {
     BOOL _canExpand, _canShorten;
     NSString *_apiKey;
+    NSDictionary *_APIEndpoints;
 }
 
 @property(nonatomic, strong) NSURL *APIBaseUrl;
 @property(nonatomic, strong) NSString *name;
 @property(nonatomic, strong) NSDictionary *params;
 @property(nonatomic) CNDataFormat dataFormat;
+@property(nonatomic, readonly) NSURL *shortenUrl, *expandUrl;
 
 @property(nonatomic, readonly) BOOL canExpand, canShorten;
 

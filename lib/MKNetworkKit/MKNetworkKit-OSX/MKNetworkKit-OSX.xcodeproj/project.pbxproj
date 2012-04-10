@@ -7,31 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB3A309C148F0A4400D06246 /* NSDate+RFC1123.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3A309A148F0A4400D06246 /* NSDate+RFC1123.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90A2BBD41534CAA5002B21E2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A2BBD31534CAA5002B21E2 /* Security.framework */; };
+		90A2BBD61534CAB3002B21E2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A2BBD51534CAB3002B21E2 /* SystemConfiguration.framework */; };
+		90A2BBD71534CAC6002B21E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB5C27F148B3B010056D3E9 /* Foundation.framework */; };
+		90A2BBDB1534CBE3002B21E2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A2BBDA1534CBE3002B21E2 /* CFNetwork.framework */; };
+		AB3A309C148F0A4400D06246 /* NSDate+RFC1123.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3A309A148F0A4400D06246 /* NSDate+RFC1123.h */; settings = {ATTRIBUTES = (); }; };
 		AB3A309D148F0A4400D06246 /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3A309B148F0A4400D06246 /* NSDate+RFC1123.m */; };
-		AB3A30A6148F0B8C00D06246 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3A30A5148F0B8C00D06246 /* Security.framework */; };
-		AB8AF0CA148B445200ECE140 /* NSAlert+MKNetworkKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8AF0C8148B445200ECE140 /* NSAlert+MKNetworkKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB8AF0CA148B445200ECE140 /* NSAlert+MKNetworkKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8AF0C8148B445200ECE140 /* NSAlert+MKNetworkKitAdditions.h */; settings = {ATTRIBUTES = (); }; };
 		AB8AF0CB148B445200ECE140 /* NSAlert+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8AF0C9148B445200ECE140 /* NSAlert+MKNetworkKitAdditions.m */; };
 		ABB5C27B148B3B010056D3E9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB5C27A148B3B010056D3E9 /* Cocoa.framework */; };
-		ABB5C29C148B3B160056D3E9 /* NSDictionary+RequestEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB5C28D148B3B160056D3E9 /* NSDictionary+RequestEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABB5C29C148B3B160056D3E9 /* NSDictionary+RequestEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB5C28D148B3B160056D3E9 /* NSDictionary+RequestEncoding.h */; settings = {ATTRIBUTES = (); }; };
 		ABB5C29D148B3B160056D3E9 /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB5C28E148B3B160056D3E9 /* NSDictionary+RequestEncoding.m */; };
-		ABB5C29E148B3B160056D3E9 /* NSString+MKNetworkKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB5C28F148B3B160056D3E9 /* NSString+MKNetworkKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABB5C29E148B3B160056D3E9 /* NSString+MKNetworkKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB5C28F148B3B160056D3E9 /* NSString+MKNetworkKitAdditions.h */; settings = {ATTRIBUTES = (); }; };
 		ABB5C29F148B3B160056D3E9 /* NSString+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB5C290148B3B160056D3E9 /* NSString+MKNetworkKitAdditions.m */; };
-		ABB5C2A2148B3B160056D3E9 /* MKNetworkEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB5C293148B3B160056D3E9 /* MKNetworkEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABB5C2A2148B3B160056D3E9 /* MKNetworkEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB5C293148B3B160056D3E9 /* MKNetworkEngine.h */; settings = {ATTRIBUTES = (); }; };
 		ABB5C2A3148B3B160056D3E9 /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB5C294148B3B160056D3E9 /* MKNetworkEngine.m */; };
-		ABB5C2A4148B3B160056D3E9 /* MKNetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB5C295148B3B160056D3E9 /* MKNetworkKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ABB5C2A5148B3B160056D3E9 /* MKNetworkOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB5C296148B3B160056D3E9 /* MKNetworkOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABB5C2A4148B3B160056D3E9 /* MKNetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB5C295148B3B160056D3E9 /* MKNetworkKit.h */; settings = {ATTRIBUTES = (); }; };
+		ABB5C2A5148B3B160056D3E9 /* MKNetworkOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB5C296148B3B160056D3E9 /* MKNetworkOperation.h */; settings = {ATTRIBUTES = (); }; };
 		ABB5C2A6148B3B160056D3E9 /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB5C297148B3B160056D3E9 /* MKNetworkOperation.m */; };
-		ABB5C2A7148B3B160056D3E9 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB5C299148B3B160056D3E9 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABB5C2A7148B3B160056D3E9 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB5C299148B3B160056D3E9 /* Reachability.h */; settings = {ATTRIBUTES = (); }; };
 		ABB5C2A8148B3B160056D3E9 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB5C29A148B3B160056D3E9 /* Reachability.m */; };
-		ABDC974A1498A8B60034CEBE /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = ABDC97481498A8B60034CEBE /* NSData+Base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABDC974A1498A8B60034CEBE /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = ABDC97481498A8B60034CEBE /* NSData+Base64.h */; settings = {ATTRIBUTES = (); }; };
 		ABDC974B1498A8B60034CEBE /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDC97491498A8B60034CEBE /* NSData+Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		90A2BBD31534CAA5002B21E2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		90A2BBD51534CAB3002B21E2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		90A2BBDA1534CBE3002B21E2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = ../../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CFNetwork.framework; sourceTree = "<group>"; };
 		AB3A309A148F0A4400D06246 /* NSDate+RFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC1123.h"; sourceTree = "<group>"; };
 		AB3A309B148F0A4400D06246 /* NSDate+RFC1123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RFC1123.m"; sourceTree = "<group>"; };
-		AB3A30A5148F0B8C00D06246 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		AB8AF0C8148B445200ECE140 /* NSAlert+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAlert+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
 		AB8AF0C9148B445200ECE140 /* NSAlert+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
 		ABB5C277148B3B010056D3E9 /* libMKNetworkKit-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libMKNetworkKit-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,8 +65,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB3A30A6148F0B8C00D06246 /* Security.framework in Frameworks */,
+				90A2BBD71534CAC6002B21E2 /* Foundation.framework in Frameworks */,
+				90A2BBD61534CAB3002B21E2 /* SystemConfiguration.framework in Frameworks */,
+				90A2BBD41534CAA5002B21E2 /* Security.framework in Frameworks */,
 				ABB5C27B148B3B010056D3E9 /* Cocoa.framework in Frameworks */,
+				90A2BBDB1534CBE3002B21E2 /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +96,9 @@
 		ABB5C279148B3B010056D3E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AB3A30A5148F0B8C00D06246 /* Security.framework */,
+				90A2BBDA1534CBE3002B21E2 /* CFNetwork.framework */,
+				90A2BBD51534CAB3002B21E2 /* SystemConfiguration.framework */,
+				90A2BBD31534CAA5002B21E2 /* Security.framework */,
 				ABB5C27A148B3B010056D3E9 /* Cocoa.framework */,
 				ABB5C27C148B3B010056D3E9 /* Other Frameworks */,
 			);
@@ -244,7 +254,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -264,6 +274,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -271,7 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -284,15 +295,21 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 		ABB5C289148B3B010056D3E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/Frameworks/CoreServices.framework/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MKNetworkKit-OSX/MKNetworkKit-OSX-Prefix.pch";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -300,9 +317,14 @@
 		ABB5C28A148B3B010056D3E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/Frameworks/CoreServices.framework/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MKNetworkKit-OSX/MKNetworkKit-OSX-Prefix.pch";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

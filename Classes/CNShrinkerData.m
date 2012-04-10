@@ -44,12 +44,10 @@
         
         NSAssert(apiUrls,@"Services require an API URL section");
         
-        NSString 
-            *shortenKey,
-            *expandKey,
-            *formatKey;
-
+        NSString *shortenKey, *expandKey, *formatKey;
+        
         NSAssert([apiUrls objectForKey:CNAPIBaseUrlKey], @"Services require a base URL definition for building API calls");
+        
         self.APIBaseUrl = [NSURL URLWithString:[apiUrls objectForKey:CNAPIBaseUrlKey]];
         [apiUrls removeObjectForKey:CNAPIBaseUrlKey];
         
@@ -60,26 +58,35 @@
         if( (expandKey = [apiUrls objectForKey:CNExpandKey]) ) {
             _canExpand = YES;
         }
-        
-        if( (formatKey = [apiUrls objectForKey:CNFormatKey]) ){
-            NSDictionary *formats = [service objectForKey:CNServiceDataFormatKey];
+
+        NSDictionary *formats;
+
+        if( (formatKey = [service objectForKey:CNFormatKey]) ) {
+            formats = [service objectForKey:CNServiceDataFormatKey];
             [formats enumerateKeysAndObjectsUsingBlock:
-             ^(id key, NSNumber* obj, BOOL *stop){
-                 *stop = [obj boolValue];
-                 if(stop) {
-                     self.dataFormat = CNDataFormatFromString(key);
-                 }
-             }];
+                 ^(id key, NSNumber* obj, BOOL *stop){
+                     *stop = [obj boolValue];
+                     if(stop) {
+                         self.dataFormat = CNDataFormatFromString(key);
+                     }
+            }];
         } else {
             self.dataFormat = CNDataFormatPlainText;
         }
-        
         self.params = [[NSDictionary alloc] initWithDictionary:apiUrls];
-        
+
         return self;
     
     } else
         return nil;
+}
+
+- (NSURL*)shortenUrl {
+    return nil;
+}
+
+- (NSURL*)expandUrl {
+    return  nil;
 }
 
 - (BOOL)canExpand {

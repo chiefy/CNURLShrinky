@@ -14,8 +14,6 @@
 		900E8B2214CF2B7F00A08BBD /* CNURLShrinky-OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900E8B0414CF2B7F00A08BBD /* CNURLShrinky-OSX.framework */; };
 		900E8B2814CF2B7F00A08BBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 900E8B2614CF2B7F00A08BBD /* InfoPlist.strings */; };
 		900E8B2B14CF2B7F00A08BBD /* CNURLShrinky_OSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B2A14CF2B7F00A08BBD /* CNURLShrinky_OSXTests.m */; };
-		900E8B3C14CF2BD000A08BBD /* CNShinkerData.h in Headers */ = {isa = PBXBuildFile; fileRef = 900E8B3514CF2BD000A08BBD /* CNShinkerData.h */; };
-		900E8B3D14CF2BD000A08BBD /* CNShinkerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B3614CF2BD000A08BBD /* CNShinkerData.m */; };
 		900E8B3F14CF2BD000A08BBD /* CNURLShrinkController.h in Headers */ = {isa = PBXBuildFile; fileRef = 900E8B3714CF2BD000A08BBD /* CNURLShrinkController.h */; };
 		900E8B4014CF2BD000A08BBD /* CNURLShrinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900E8B3814CF2BD000A08BBD /* CNURLShrinkController.m */; };
 		900E8B4214CF2BD000A08BBD /* CNURLShrinker.h in Headers */ = {isa = PBXBuildFile; fileRef = 900E8B3914CF2BD000A08BBD /* CNURLShrinker.h */; };
@@ -30,6 +28,16 @@
 		900E8C6514CF2C2300A08BBD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 900E8C0614CF2C2300A08BBD /* README.md */; };
 		900E8C6614CF2C2300A08BBD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 900E8C0614CF2C2300A08BBD /* README.md */; };
 		900E8CEF14CF31B700A08BBD /* libMKNetworkKit-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 900E8CEE14CF31B700A08BBD /* libMKNetworkKit-OSX.a */; };
+		90A2BBB01534C52A002B21E2 /* NSAlert+MKNetworkKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 90A2BB9C1534C52A002B21E2 /* NSAlert+MKNetworkKitAdditions.h */; };
+		90A2BBB21534C52A002B21E2 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 90A2BB9E1534C52A002B21E2 /* NSData+Base64.h */; };
+		90A2BBB41534C52A002B21E2 /* NSDate+RFC1123.h in Headers */ = {isa = PBXBuildFile; fileRef = 90A2BBA01534C52A002B21E2 /* NSDate+RFC1123.h */; };
+		90A2BBB61534C52A002B21E2 /* NSDictionary+RequestEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 90A2BBA21534C52A002B21E2 /* NSDictionary+RequestEncoding.h */; };
+		90A2BBB81534C52A002B21E2 /* NSString+MKNetworkKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 90A2BBA41534C52A002B21E2 /* NSString+MKNetworkKitAdditions.h */; };
+		90A2BBBC1534C52A002B21E2 /* MKNetworkEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 90A2BBA81534C52A002B21E2 /* MKNetworkEngine.h */; };
+		90A2BBBE1534C52A002B21E2 /* MKNetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 90A2BBAA1534C52A002B21E2 /* MKNetworkKit.h */; };
+		90A2BBBF1534C52A002B21E2 /* MKNetworkOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 90A2BBAB1534C52A002B21E2 /* MKNetworkOperation.h */; };
+		90A2BBDF1534CCC5002B21E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A2BBDE1534CCC5002B21E2 /* Foundation.framework */; };
+		90A2BBE21534CE1C002B21E2 /* libMKNetworkKit-OSX.a in Resources */ = {isa = PBXBuildFile; fileRef = 900E8CEE14CF31B700A08BBD /* libMKNetworkKit-OSX.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +53,6 @@
 /* Begin PBXFileReference section */
 		900E8B0414CF2B7F00A08BBD /* CNURLShrinky-OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "CNURLShrinky-OSX.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		900E8B0714CF2B7F00A08BBD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		900E8B0A14CF2B7F00A08BBD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		900E8B0B14CF2B7F00A08BBD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		900E8B0C14CF2B7F00A08BBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		900E8B0F14CF2B7F00A08BBD /* CNURLShrinky-OSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CNURLShrinky-OSX-Info.plist"; sourceTree = "<group>"; };
 		900E8B1114CF2B7F00A08BBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		900E8B1314CF2B7F00A08BBD /* CNURLShrinky-OSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CNURLShrinky-OSX-Prefix.pch"; sourceTree = "<group>"; };
@@ -57,8 +62,6 @@
 		900E8B2714CF2B7F00A08BBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		900E8B2914CF2B7F00A08BBD /* CNURLShrinky_OSXTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNURLShrinky_OSXTests.h; sourceTree = "<group>"; };
 		900E8B2A14CF2B7F00A08BBD /* CNURLShrinky_OSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNURLShrinky_OSXTests.m; sourceTree = "<group>"; };
-		900E8B3514CF2BD000A08BBD /* CNShinkerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNShinkerData.h; sourceTree = "<group>"; };
-		900E8B3614CF2BD000A08BBD /* CNShinkerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNShinkerData.m; sourceTree = "<group>"; };
 		900E8B3714CF2BD000A08BBD /* CNURLShrinkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNURLShrinkController.h; sourceTree = "<group>"; };
 		900E8B3814CF2BD000A08BBD /* CNURLShrinkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNURLShrinkController.m; sourceTree = "<group>"; };
 		900E8B3914CF2BD000A08BBD /* CNURLShrinker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNURLShrinker.h; sourceTree = "<group>"; };
@@ -70,7 +73,16 @@
 		900E8C0414CF2C2300A08BBD /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		900E8C0514CF2C2300A08BBD /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		900E8C0614CF2C2300A08BBD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		900E8CEE14CF31B700A08BBD /* libMKNetworkKit-OSX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libMKNetworkKit-OSX.a"; path = "../../../../Library/Developer/Xcode/DerivedData/CNURLShrinky-fmtzalmclfmzyxfldiiohnphtrvq/Build/Products/Debug/libMKNetworkKit-OSX.a"; sourceTree = "<group>"; };
+		900E8CEE14CF31B700A08BBD /* libMKNetworkKit-OSX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libMKNetworkKit-OSX.a"; path = "../../../../../../Library/Developer/Xcode/DerivedData/CNURLShrinky-fmtzalmclfmzyxfldiiohnphtrvq/Build/Products/Debug/libMKNetworkKit-OSX.a"; sourceTree = "<group>"; };
+		90A2BB9C1534C52A002B21E2 /* NSAlert+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAlert+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		90A2BB9E1534C52A002B21E2 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		90A2BBA01534C52A002B21E2 /* NSDate+RFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC1123.h"; sourceTree = "<group>"; };
+		90A2BBA21534C52A002B21E2 /* NSDictionary+RequestEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RequestEncoding.h"; sourceTree = "<group>"; };
+		90A2BBA41534C52A002B21E2 /* NSString+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		90A2BBA81534C52A002B21E2 /* MKNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkEngine.h; sourceTree = "<group>"; };
+		90A2BBAA1534C52A002B21E2 /* MKNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkKit.h; sourceTree = "<group>"; };
+		90A2BBAB1534C52A002B21E2 /* MKNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkOperation.h; sourceTree = "<group>"; };
+		90A2BBDE1534CCC5002B21E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				900E8CEF14CF31B700A08BBD /* libMKNetworkKit-OSX.a in Frameworks */,
+				90A2BBDF1534CCC5002B21E2 /* Foundation.framework in Frameworks */,
 				900E8B0814CF2B7F00A08BBD /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,21 +133,11 @@
 		900E8B0614CF2B7F00A08BBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90A2BBDE1534CCC5002B21E2 /* Foundation.framework */,
 				900E8B0714CF2B7F00A08BBD /* Cocoa.framework */,
 				900E8B1D14CF2B7F00A08BBD /* SenTestingKit.framework */,
-				900E8B0914CF2B7F00A08BBD /* Other Frameworks */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		900E8B0914CF2B7F00A08BBD /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				900E8B0A14CF2B7F00A08BBD /* AppKit.framework */,
-				900E8B0B14CF2B7F00A08BBD /* CoreData.framework */,
-				900E8B0C14CF2B7F00A08BBD /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 		900E8B0D14CF2B7F00A08BBD /* CNURLShrinky-OSX */ = {
@@ -177,8 +180,6 @@
 		900E8B3414CF2BD000A08BBD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				900E8B3514CF2BD000A08BBD /* CNShinkerData.h */,
-				900E8B3614CF2BD000A08BBD /* CNShinkerData.m */,
 				900E8B3714CF2BD000A08BBD /* CNURLShrinkController.h */,
 				900E8B3814CF2BD000A08BBD /* CNURLShrinkController.m */,
 				900E8B3914CF2BD000A08BBD /* CNURLShrinker.h */,
@@ -192,7 +193,7 @@
 		900E8BFE14CF2C2300A08BBD /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				900E8CEE14CF31B700A08BBD /* libMKNetworkKit-OSX.a */,
+				90A2BB9A1534C52A002B21E2 /* MKNetworkKit */,
 				900E8BFF14CF2C2300A08BBD /* GDataXML */,
 				900E8C0214CF2C2300A08BBD /* JSONKit */,
 			);
@@ -220,6 +221,31 @@
 			path = JSONKit;
 			sourceTree = "<group>";
 		};
+		90A2BB9A1534C52A002B21E2 /* MKNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				90A2BB9B1534C52A002B21E2 /* Categories */,
+				90A2BBA81534C52A002B21E2 /* MKNetworkEngine.h */,
+				90A2BBAA1534C52A002B21E2 /* MKNetworkKit.h */,
+				90A2BBAB1534C52A002B21E2 /* MKNetworkOperation.h */,
+				900E8CEE14CF31B700A08BBD /* libMKNetworkKit-OSX.a */,
+			);
+			name = MKNetworkKit;
+			path = MKNetworkKit/MKNetworkKit;
+			sourceTree = "<group>";
+		};
+		90A2BB9B1534C52A002B21E2 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				90A2BB9C1534C52A002B21E2 /* NSAlert+MKNetworkKitAdditions.h */,
+				90A2BB9E1534C52A002B21E2 /* NSData+Base64.h */,
+				90A2BBA01534C52A002B21E2 /* NSDate+RFC1123.h */,
+				90A2BBA21534C52A002B21E2 /* NSDictionary+RequestEncoding.h */,
+				90A2BBA41534C52A002B21E2 /* NSString+MKNetworkKitAdditions.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -227,12 +253,19 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				900E8B3C14CF2BD000A08BBD /* CNShinkerData.h in Headers */,
 				900E8B3F14CF2BD000A08BBD /* CNURLShrinkController.h in Headers */,
 				900E8B4214CF2BD000A08BBD /* CNURLShrinker.h in Headers */,
 				900E8B4514CF2BD000A08BBD /* CNURLShrinkyGlobal.h in Headers */,
 				900E8C5D14CF2C2300A08BBD /* GDataXMLNode.h in Headers */,
 				900E8C6214CF2C2300A08BBD /* JSONKit.h in Headers */,
+				90A2BBB01534C52A002B21E2 /* NSAlert+MKNetworkKitAdditions.h in Headers */,
+				90A2BBB21534C52A002B21E2 /* NSData+Base64.h in Headers */,
+				90A2BBB41534C52A002B21E2 /* NSDate+RFC1123.h in Headers */,
+				90A2BBB61534C52A002B21E2 /* NSDictionary+RequestEncoding.h in Headers */,
+				90A2BBB81534C52A002B21E2 /* NSString+MKNetworkKitAdditions.h in Headers */,
+				90A2BBBC1534C52A002B21E2 /* MKNetworkEngine.h in Headers */,
+				90A2BBBE1534C52A002B21E2 /* MKNetworkKit.h in Headers */,
+				90A2BBBF1534C52A002B21E2 /* MKNetworkOperation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90A2BBE21534CE1C002B21E2 /* libMKNetworkKit-OSX.a in Resources */,
 				900E8B1214CF2B7F00A08BBD /* InfoPlist.strings in Resources */,
 				900E8C6014CF2C2300A08BBD /* CHANGELOG.md in Resources */,
 				900E8C6514CF2C2300A08BBD /* README.md in Resources */,
@@ -346,7 +380,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				900E8B3D14CF2BD000A08BBD /* CNShinkerData.m in Sources */,
 				900E8B4014CF2BD000A08BBD /* CNURLShrinkController.m in Sources */,
 				900E8B4314CF2BD000A08BBD /* CNURLShrinker.m in Sources */,
 				900E8C5E14CF2C2300A08BBD /* GDataXMLNode.m in Sources */,
@@ -395,8 +428,8 @@
 		900E8B2C14CF2B7F00A08BBD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -424,8 +457,8 @@
 		900E8B2D14CF2B7F00A08BBD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -452,11 +485,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CNURLShrinky-OSX/CNURLShrinky-OSX-Prefix.pch";
 				INFOPLIST_FILE = "CNURLShrinky-OSX/CNURLShrinky-OSX-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/CNURLShrinky-fmtzalmclfmzyxfldiiohnphtrvq/Build/Products/Debug\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/**";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -470,11 +501,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CNURLShrinky-OSX/CNURLShrinky-OSX-Prefix.pch";
 				INFOPLIST_FILE = "CNURLShrinky-OSX/CNURLShrinky-OSX-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/CNURLShrinky-fmtzalmclfmzyxfldiiohnphtrvq/Build/Products/Debug\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/**";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -522,6 +551,7 @@
 				900E8B3014CF2B7F00A08BBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		900E8B3114CF2B7F00A08BBD /* Build configuration list for PBXNativeTarget "CNURLShrinky-OSXTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +560,7 @@
 				900E8B3314CF2B7F00A08BBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

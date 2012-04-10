@@ -75,7 +75,6 @@
 		900E8B6014CF2C1900A08BBD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		900E8CD114CF2E3300A08BBD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		900E8CEA14CF30B000A08BBD /* libMKNetworkKit-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libMKNetworkKit-iOS.a"; path = "MKNetworkKit/MKNetworkKit-iOS/build/Release-iphoneos/libMKNetworkKit-iOS.a"; sourceTree = "<group>"; };
-		9071E46414D9E6BA0048297E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		9071E46B14D9EC4D0048297E /* NSDate+RFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC1123.h"; sourceTree = "<group>"; };
 		9071E46D14D9EC4D0048297E /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		9071E46F14D9EC4D0048297E /* NSDictionary+RequestEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RequestEncoding.h"; sourceTree = "<group>"; };
@@ -134,7 +133,6 @@
 		900E8AD014CF2B3800A08BBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9071E46414D9E6BA0048297E /* Security.framework */,
 				900E8CD114CF2E3300A08BBD /* UIKit.framework */,
 				900E8AD114CF2B3800A08BBD /* Foundation.framework */,
 				900E8ADF14CF2B3800A08BBD /* SenTestingKit.framework */,
